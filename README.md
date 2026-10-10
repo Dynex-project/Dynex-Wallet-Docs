@@ -114,7 +114,7 @@ Checksums in this repository refresh automatically from the release files. See t
 
 ---
 
-## About
+## About.
 
 Dynex Wallet is a free, open-source, self-custody desktop wallet for DNX on Windows, macOS and Linux, published by Dynex Quantum Technologies AG, Baar, Switzerland. Source and releases: [Dynex-project/Dynex-Desktop-Wallet](https://github.com/Dynex-project/Dynex-Desktop-Wallet). Website: [dynexwallet.org](https://dynexwallet.org/). Report problems on [GitHub Issues](https://github.com/Dynex-project/Dynex-Desktop-Wallet/issues).
 
