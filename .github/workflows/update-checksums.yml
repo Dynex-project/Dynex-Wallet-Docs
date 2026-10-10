@@ -1,0 +1,28 @@
+name: Update SHA-256 checksums
+on:
+  release:
+    types: [published, edited, created]
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  checksums:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Recompute checksums from release files
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          UPDATE_RELEASE: ${{ github.repository == 'Dynex-project/Dynex-Desktop-Wallet' && '1' || '0' }}
+        run: python .github/workflows/update_checksums.py
+      - name: Commit if changed
+        run: |
+          git config user.name "dynex-checksum-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || (git commit -m "Update SHA-256 checksums" && git push)
